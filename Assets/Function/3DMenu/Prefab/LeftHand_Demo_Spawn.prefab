@@ -667,7 +667,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipCount: 10
-  equipP: {fileID: 6892405175141741232, guid: 21f59e89f40a2b54fac278a448aaf45f, type: 3}
+  equipP: {fileID: 6892405175141741232, guid: e3e036ce4beb8344681c4be1e09cd12f, type: 3}
   interactable: {fileID: 7058655514842148019}
   Offset: 1
   equipamount: {fileID: 1737314184006154027}

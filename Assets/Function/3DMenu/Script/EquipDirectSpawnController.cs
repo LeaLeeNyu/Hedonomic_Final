@@ -38,4 +38,9 @@ public class EquipDirectSpawnController : MonoBehaviour
         }
     }
 
+    public void DebugLog()
+    {
+        Debug.Log("Select");
+    }
+
 }
