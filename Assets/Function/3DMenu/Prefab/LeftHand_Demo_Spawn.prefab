@@ -1264,7 +1264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handType: 0
   inputDeviceCharacteristics: 0
-  leftHandName: LeftHand_Demo
+  leftHandName: LeftHand_Demo_Spawn
   rightHandName: RightHand_Demo
   watchCanvas: {fileID: 6741807458406291241}
   equipObjects:
