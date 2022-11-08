@@ -4,7 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/DemoScene/CHENGBO.unity
+    guid: cc80165ca1cd14de3beef8646c9ff951
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 56028036ca5953e4b979e09a85df2a5f, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 1b74b8768049a064cbb6da5ed1b778b4, type: 2}
