@@ -10,13 +10,12 @@ Test: When player hold the item on the hands, the equipments become smaller
 
 public class XREquipGrabbableHand : XRGrabInteractable
 {
-    [SerializeField] private float handScale;
-    private Vector3 normalScale;
+    [SerializeField] private float handScale = 0.1f;
+    [SerializeField] private float normalScale = 0.5f;
+    [SerializeField] private float socketScale = 1;
+    private string controllerName = "RightHand";
+    private string socketName = "Socket";
 
-    private void Start()
-    {
-        normalScale = gameObject.transform.localScale;
-    }
 
     protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
@@ -26,12 +25,19 @@ public class XREquipGrabbableHand : XRGrabInteractable
         {
             var controller = controllerInteractor.xrController;
 
-            if(controller.tag == "Hand")
+            if(controller.tag == controllerName)
             {
                 gameObject.transform.localScale = new Vector3(handScale, handScale, handScale);
+            }else if(controller.tag == socketName)
+            {
+                gameObject.transform.localScale = new Vector3(socketScale, socketScale, socketScale);
             }
+
+            
         }
     }
+
+    
 
     protected override void OnSelectExited(SelectExitEventArgs args)
     {
@@ -41,9 +47,13 @@ public class XREquipGrabbableHand : XRGrabInteractable
         {
             var controller = controllerInteractor.xrController;
 
-            if (controller.tag == "Hand")
+            if (controller.tag == controllerName)
             {
-                gameObject.transform.localScale = normalScale;
+                gameObject.transform.localScale = new Vector3(normalScale, normalScale, normalScale);
+            }
+            else if (controller.tag == socketName)
+            {
+                gameObject.transform.localScale = new Vector3(normalScale, normalScale, normalScale);
             }
         }
     }

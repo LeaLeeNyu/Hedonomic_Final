@@ -28,7 +28,7 @@ public class EquipDirectSpawnController : MonoBehaviour
         SpawnObject(equipP);
     }
 
-    public void SpawnObject(GameObject equip)
+    private void SpawnObject(GameObject equip)
     {
         if (equipCurrentCount < equipCount)
         {

@@ -278,4 +278,4 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
-  handScale: 0.1
+  handScale: 0.3
