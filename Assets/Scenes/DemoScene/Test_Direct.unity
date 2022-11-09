@@ -149,7 +149,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 59084251}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: f96ef9d00ec33a54da2bb5e801f50390, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
@@ -176,7 +176,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 406f981dfa0d762468889233207ff9d3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -656,6 +656,9 @@ GameObject:
   m_Component:
   - component: {fileID: 405844468}
   - component: {fileID: 405844467}
+  - component: {fileID: 405844469}
+  - component: {fileID: 405844470}
+  - component: {fileID: 405844471}
   m_Layer: 0
   m_Name: XR Origin
   m_TagString: Untagged
@@ -688,7 +691,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 405844466}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.49304485, y: -0.36935294, z: 0.8163463}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -701,6 +704,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &405844469
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405844466}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.3
+  m_Height: 1.6
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!54 &405844470
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405844466}
+  serializedVersion: 2
+  m_Mass: 3
+  m_Drag: 10
+  m_AngularDrag: 10
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!114 &405844471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405844466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32b0e999465f55647a076dc4c4c77bd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpReference: {fileID: 5001573303941018886, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  jumpForce: 200
 --- !u!1 &702125744
 GameObject:
   m_ObjectHideFlags: 0
@@ -2136,7 +2183,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6892405175141741242, guid: e3e036ce4beb8344681c4be1e09cd12f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.439727
+      value: -5.58
       objectReference: {fileID: 0}
     - target: {fileID: 6892405175141741242, guid: e3e036ce4beb8344681c4be1e09cd12f, type: 3}
       propertyPath: m_LocalPosition.y

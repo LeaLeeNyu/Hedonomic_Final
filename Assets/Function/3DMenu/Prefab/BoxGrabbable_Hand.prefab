@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7390755720867552074}
   - component: {fileID: 3512038472896937242}
   - component: {fileID: 4042456186420004988}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BoxObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,9 +94,8 @@ GameObject:
   - component: {fileID: 6892405175141741242}
   - component: {fileID: 6892405175141741239}
   - component: {fileID: 6892405175141741238}
-  - component: {fileID: 8245379444591133329}
   - component: {fileID: 3751275530907653430}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BoxGrabbable_Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -140,29 +139,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6892405175141741232}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 100
-  m_AngularDrag: 100
+  m_Mass: 0.1
+  m_Drag: 0
+  m_AngularDrag: 0
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 2
---- !u!114 &8245379444591133329
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6892405175141741232}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84d61588d795b7340b8d2eded4c0b6ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  normalScale: 0.5
-  equipMesh: {fileID: 718394961655236440}
-  equipCollider: {fileID: 6892405175141741239}
 --- !u!114 &3751275530907653430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -279,3 +263,5 @@ MonoBehaviour:
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
   handScale: 0.3
+  normalScale: 0.5
+  socketScale: 1

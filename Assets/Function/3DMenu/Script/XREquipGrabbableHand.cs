@@ -16,11 +16,19 @@ public class XREquipGrabbableHand : XRGrabInteractable
     private string controllerName = "RightHand";
     private string socketName = "Socket";
 
+    private XRInteractionManager _interactionManager;
+
+    private void Start()
+    {
+        _interactionManager = GameObject.FindObjectOfType<XRInteractionManager>();
+    }
+
 
     protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
         base.OnSelectEntered(args);
 
+        // get the interactor that select the interactable
         if (args.interactorObject is XRBaseControllerInteractor controllerInteractor && controllerInteractor != null)
         {
             var controller = controllerInteractor.xrController;
@@ -28,17 +36,15 @@ public class XREquipGrabbableHand : XRGrabInteractable
             if(controller.tag == controllerName)
             {
                 gameObject.transform.localScale = new Vector3(handScale, handScale, handScale);
-            }else if(controller.tag == socketName)
-            {
-                gameObject.transform.localScale = new Vector3(socketScale, socketScale, socketScale);
+
+                _interactionManager.SelectEnter(args.interactorObject, args.interactableObject);
             }
 
-            
         }
+
+
     }
-
     
-
     protected override void OnSelectExited(SelectExitEventArgs args)
     {
         base.OnSelectExited(args);

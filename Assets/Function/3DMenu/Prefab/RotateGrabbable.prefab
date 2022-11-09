@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9158477257104312115}
   - component: {fileID: 3735571442036062744}
   - component: {fileID: 8619500205406836699}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 7628790984871900431}
   - component: {fileID: 1700802530970528677}
   - component: {fileID: 2130979000227858732}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -195,7 +195,7 @@ GameObject:
   - component: {fileID: 8245379444591133329}
   - component: {fileID: 1581388059556585693}
   - component: {fileID: 8062234670710508411}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RotateGrabbable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -239,13 +239,13 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6892405175141741232}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 100
-  m_AngularDrag: 100
+  m_Mass: 0.1
+  m_Drag: 0
+  m_AngularDrag: 0
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 94
   m_CollisionDetection: 2
 --- !u!114 &8245379444591133329
 MonoBehaviour:

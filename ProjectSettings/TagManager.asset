@@ -6,6 +6,7 @@ TagManager:
   tags:
   - WatchSocket
   - RightHand
+  - Hand
   layers:
   - Default
   - TransparentFX
@@ -13,8 +14,8 @@ TagManager:
   - WatchSocket
   - Water
   - UI
-  - 
-  - 
+  - XROrigin
+  - BuildingMaterial
   - 
   - 
   - 
