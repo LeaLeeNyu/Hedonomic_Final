@@ -233,7 +233,7 @@ GameObject:
   - component: {fileID: 294099595}
   - component: {fileID: 294099594}
   - component: {fileID: 294099593}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LeftHand Direct
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -522,7 +522,7 @@ GameObject:
   m_Component:
   - component: {fileID: 347091281}
   - component: {fileID: 347091280}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: InputActionManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -569,7 +569,7 @@ GameObject:
   - component: {fileID: 401324760}
   - component: {fileID: 401324759}
   - component: {fileID: 401324761}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Teleportation Provider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -659,7 +659,7 @@ GameObject:
   - component: {fileID: 405844469}
   - component: {fileID: 405844470}
   - component: {fileID: 405844471}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: XR Origin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -854,7 +854,7 @@ GameObject:
   - component: {fileID: 800666681}
   - component: {fileID: 800666680}
   - component: {fileID: 800666683}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -1028,7 +1028,7 @@ GameObject:
   - component: {fileID: 900513293}
   - component: {fileID: 900513292}
   - component: {fileID: 900513291}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RightHand Direct
   m_TagString: RightHand
   m_Icon: {fileID: 0}
@@ -1317,7 +1317,7 @@ GameObject:
   m_Component:
   - component: {fileID: 944536442}
   - component: {fileID: 944536441}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: XR Interaction Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1586,7 +1586,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1388809336}
   - component: {fileID: 1388809335}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LocomotionSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1635,7 +1635,7 @@ GameObject:
   - component: {fileID: 1489598564}
   - component: {fileID: 1489598563}
   - component: {fileID: 1489598562}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RightHand Ray
   m_TagString: Hand
   m_Icon: {fileID: 0}
@@ -2140,7 +2140,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1583922120}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Camera Offset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2233,7 +2233,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1923104010}
   - component: {fileID: 1923104011}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Snap Turn Provider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
