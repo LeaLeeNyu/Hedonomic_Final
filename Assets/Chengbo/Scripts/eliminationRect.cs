@@ -41,7 +41,7 @@ public class eliminationRect : MonoBehaviour
     {
       if (mainSceneObject.destroyedCounter >= 0 && mainSceneObject.destroyedCounter < 10)
       {
-        if (other.gameObject.name == "kirby(Clone)")
+        if (other.gameObject.name == "Kirby(Clone)")
         {
             Destroy(other.collider.gameObject);
             mainSceneObject.destroyedCounter = mainSceneObject.destroyedCounter+1;

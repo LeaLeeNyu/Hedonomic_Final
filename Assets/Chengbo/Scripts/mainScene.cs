@@ -42,7 +42,7 @@ public class mainScene : MonoBehaviour
 
         if (0 <= destroyedCounter && destroyedCounter <= 10)
         {
-          //displayText.text = "Lv. " + destroyedCounter;
+          displayText.text = "Lv. " + destroyedCounter;
           //Banana
           // if (Time.frameCount % 95 == 0)
           // {
