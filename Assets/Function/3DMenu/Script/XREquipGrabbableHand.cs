@@ -11,16 +11,17 @@ Test: When player hold the item on the hands, the equipments become smaller
 public class XREquipGrabbableHand : XRGrabInteractable
 {
     [SerializeField] private float handScale = 0.1f;
-    [SerializeField] private float normalScale = 0.5f;
-    [SerializeField] private float socketScale = 1;
+
     private string controllerName = "RightHand";
-    private string socketName = "Socket";
+
+    private BoxCollider boxCollider;
 
     private XRInteractionManager _interactionManager;
 
     private void Start()
     {
         _interactionManager = GameObject.FindObjectOfType<XRInteractionManager>();
+        boxCollider = GetComponent<BoxCollider>();
     }
 
 
@@ -35,9 +36,14 @@ public class XREquipGrabbableHand : XRGrabInteractable
 
             if(controller.tag == controllerName)
             {
-                gameObject.transform.localScale = new Vector3(handScale, handScale, handScale);
+                gameObject.transform.localScale = new Vector3(handScale * gameObject.transform.localScale.x,
+                                                              handScale * gameObject.transform.localScale.y,
+                                                              handScale * gameObject.transform.localScale.z);
 
                 _interactionManager.SelectEnter(args.interactorObject, args.interactableObject);
+
+                //Set the collider to trigger, therefore it doesn't have collision with player's collider
+                boxCollider.isTrigger = true;
             }
 
         }
@@ -55,11 +61,11 @@ public class XREquipGrabbableHand : XRGrabInteractable
 
             if (controller.tag == controllerName)
             {
-                gameObject.transform.localScale = new Vector3(normalScale, normalScale, normalScale);
-            }
-            else if (controller.tag == socketName)
-            {
-                gameObject.transform.localScale = new Vector3(normalScale, normalScale, normalScale);
+                gameObject.transform.localScale = new Vector3( gameObject.transform.localScale.x / handScale,
+                                                               gameObject.transform.localScale.y / handScale,
+                                                               gameObject.transform.localScale.z / handScale);
+
+                boxCollider.isTrigger = false;
             }
         }
     }

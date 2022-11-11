@@ -10,8 +10,9 @@ Test:The equipments will spawn at the position of 3D panel
 public class EquipDirectSpawnController : MonoBehaviour
 {
 
-    public int equipCount;
+    private int equipCount;
     private int equipCurrentCount = 0;
+    public BuildingMaterialSO buildingMaterial;
     [SerializeField] private GameObject equipP;
     [SerializeField] private Transform spawnPos;
 
@@ -20,6 +21,7 @@ public class EquipDirectSpawnController : MonoBehaviour
 
     private void Start()
     {
+        equipCount = buildingMaterial.amount;
         equipamount.text = (equipCount - equipCurrentCount).ToString();
     }
 

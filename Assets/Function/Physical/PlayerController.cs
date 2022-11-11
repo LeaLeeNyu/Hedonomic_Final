@@ -34,4 +34,15 @@ public class PlayerController : MonoBehaviour
         _rigidbody.AddForce(Vector3.up * jumpForce);
 
     }
+
+    private void Update()
+    {
+        if (transform.position.y <= -5)
+        {
+            PlayerPositionData positionData = SaveSystem.LoadPosData();
+
+            Vector3 pos = new Vector3(positionData.position[0], positionData.position[1], positionData.position[2]);
+            transform.position = pos;
+        }
+    }
 }

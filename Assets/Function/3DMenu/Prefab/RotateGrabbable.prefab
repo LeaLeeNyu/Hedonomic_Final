@@ -192,7 +192,6 @@ GameObject:
   - component: {fileID: 6892405175141741242}
   - component: {fileID: 6892405175141741239}
   - component: {fileID: 6892405175141741238}
-  - component: {fileID: 8245379444591133329}
   - component: {fileID: 1581388059556585693}
   - component: {fileID: 8062234670710508411}
   m_Layer: 7
@@ -247,21 +246,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 94
   m_CollisionDetection: 2
---- !u!114 &8245379444591133329
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6892405175141741232}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84d61588d795b7340b8d2eded4c0b6ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  normalScale: 0.5
-  equipMesh: {fileID: 0}
-  equipCollider: {fileID: 6892405175141741239}
 --- !u!114 &1581388059556585693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -377,7 +361,7 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
-  equipController: {fileID: 8245379444591133329}
+  equipController: {fileID: 0}
 --- !u!95 &8062234670710508411
 Animator:
   serializedVersion: 4
