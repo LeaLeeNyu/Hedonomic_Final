@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem.XR;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -17,13 +18,21 @@ public class XREquipGrabbableHand : XRGrabInteractable
     private BoxCollider boxCollider;
 
     private XRInteractionManager _interactionManager;
+    private IXRSelectInteractor rightHand;
 
     private void Start()
     {
-        _interactionManager = GameObject.FindObjectOfType<XRInteractionManager>();
+        _interactionManager = GameObject.Find("XR Interaction Manager").GetComponent<XRInteractionManager>();
         boxCollider = GetComponent<BoxCollider>();
+        rightHand = GameObject.Find("RightHand Direct").GetComponent<XRDirectInteractor>(); ;
     }
 
+    //Once the equipment spawn in the world, select by right hand
+    protected override void OnEnable()
+    {
+        base.OnEnable();
+        _interactionManager.SelectEnter(rightHand,this);
+    }
 
     protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
@@ -39,8 +48,6 @@ public class XREquipGrabbableHand : XRGrabInteractable
                 gameObject.transform.localScale = new Vector3(handScale * gameObject.transform.localScale.x,
                                                               handScale * gameObject.transform.localScale.y,
                                                               handScale * gameObject.transform.localScale.z);
-
-                _interactionManager.SelectEnter(args.interactorObject, args.interactableObject);
 
                 //Set the collider to trigger, therefore it doesn't have collision with player's collider
                 boxCollider.isTrigger = true;
