@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2115989503971080177}
   m_Layer: 7
   m_Name: Box_Direct
-  m_TagString: Untagged
+  m_TagString: Material
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,7 +94,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1333397830098856753}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: f96ef9d00ec33a54da2bb5e801f50390, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -232,6 +232,7 @@ MonoBehaviour:
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
   handScale: 0.3
+  boxCollider: {fileID: 1333397830098856759}
 --- !u!1 &9106266753349247152
 GameObject:
   m_ObjectHideFlags: 0

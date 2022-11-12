@@ -6,32 +6,21 @@ using UnityEngine.InputSystem.XR;
 using UnityEngine.XR.Interaction.Toolkit;
 
 /*
-Test: When player hold the item on the hands, the equipments become smaller
+ When player hold the item on the hands, the equipments become smaller
  */
 
 public class XREquipGrabbableHand : XRGrabInteractable
 {
     [SerializeField] private float handScale = 0.1f;
 
-    private string controllerName = "RightHand";
+    private string rightControllerName = "RightHand";
 
-    private BoxCollider boxCollider;
-
-    private XRInteractionManager _interactionManager;
-    private IXRSelectInteractor rightHand;
+    [SerializeField]private BoxCollider boxCollider;
 
     private void Start()
     {
-        _interactionManager = GameObject.Find("XR Interaction Manager").GetComponent<XRInteractionManager>();
-        boxCollider = GetComponent<BoxCollider>();
-        rightHand = GameObject.Find("RightHand Direct").GetComponent<XRDirectInteractor>(); ;
-    }
-
-    //Once the equipment spawn in the world, select by right hand
-    protected override void OnEnable()
-    {
-        base.OnEnable();
-        _interactionManager.SelectEnter(rightHand,this);
+        //boxCollider = GetComponent<BoxCollider>();
+       
     }
 
     protected override void OnSelectEntered(SelectEnterEventArgs args)
@@ -43,19 +32,24 @@ public class XREquipGrabbableHand : XRGrabInteractable
         {
             var controller = controllerInteractor.xrController;
 
-            if(controller.tag == controllerName)
+            if(controller.tag == rightControllerName)
             {
                 gameObject.transform.localScale = new Vector3(handScale * gameObject.transform.localScale.x,
                                                               handScale * gameObject.transform.localScale.y,
                                                               handScale * gameObject.transform.localScale.z);
 
-                //Set the collider to trigger, therefore it doesn't have collision with player's collider
-                boxCollider.isTrigger = true;
+                if(boxCollider == null)
+                {
+                    Debug.Log("this grabbable does not have collider");
+                }
+                else
+                {
+                    boxCollider.isTrigger = true;
+                }
+                
             }
 
         }
-
-
     }
     
     protected override void OnSelectExited(SelectExitEventArgs args)
@@ -66,7 +60,7 @@ public class XREquipGrabbableHand : XRGrabInteractable
         {
             var controller = controllerInteractor.xrController;
 
-            if (controller.tag == controllerName)
+            if (controller.tag == rightControllerName)
             {
                 gameObject.transform.localScale = new Vector3( gameObject.transform.localScale.x / handScale,
                                                                gameObject.transform.localScale.y / handScale,
@@ -76,5 +70,19 @@ public class XREquipGrabbableHand : XRGrabInteractable
             }
         }
     }
-    
+
+    //private void Update()
+    //{
+    //    if (isSelected)
+    //    {
+    //        foreach (XRBaseInteractor interactor in interactorsSelecting)
+    //        {
+    //            if (interactor.tag == rightControllerName)
+    //            {
+    //                boxCollider.isTrigger = true;
+    //            }
+    //        }
+    //    }
+    //}
+
 }

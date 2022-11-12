@@ -2,24 +2,38 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static UnityEngine.GraphicsBuffer;
 
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private InputActionReference jumpReference;
     [SerializeField] private float jumpForce = 100f;
+    [SerializeField] private GameObject checkGround;
 
     private Rigidbody _rigidbody;
 
-    private bool _isGrounded =>
-        Physics.Raycast(new Vector2(transform.position.x, transform.position.y + 0.5f), Vector3.down, 0.5f);
+    //private bool _isGrounded =>
+    //    Physics.Raycast(new Vector2(checkGround.transform.position.x, checkGround.transform.position.y + 2f), Vector3.down, 2.1f);
 
 
+    private bool isGrounded()
+    {
+        bool onGround = false;
+        Collider[] colliders = Physics.OverlapSphere(checkGround.transform.position, 0.1f);
+        foreach (Collider collider in colliders)
+        {
+            if(collider.tag == "Ground" || collider.tag == "Material")
+            {
+                onGround = true;
+            }
+        }
+        return onGround;
+    }
 
     private void Start()
     {
         _rigidbody = GetComponent<Rigidbody>();
         jumpReference.action.performed += OnJump;
-        Debug.Log(_isGrounded);
     }
 
     private void OnDisable()
@@ -31,8 +45,9 @@ public class PlayerController : MonoBehaviour
 
     void OnJump(InputAction.CallbackContext context)
     {
-        _rigidbody.AddForce(Vector3.up * jumpForce);
-
+        bool canJump = isGrounded();
+        if (canJump)
+            _rigidbody.AddForce(Vector3.up * jumpForce);
     }
 
     private void Update()

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 /*
 Test:The equipments will spawn at the position of 3D panel
@@ -19,6 +20,7 @@ public class EquipDirectSpawnController : MonoBehaviour
     //Interface
     [SerializeField] private TMP_Text equipamount;
 
+
     private void Start()
     {
         equipCount = buildingMaterial.amount;
@@ -34,12 +36,13 @@ public class EquipDirectSpawnController : MonoBehaviour
     {
         if (equipCurrentCount < equipCount)
         {
-            Instantiate(equip, spawnPos.position, equip.transform.rotation);
+            GameObject buildingMaterial =Instantiate(equip, spawnPos.position, equip.transform.rotation);
+
+            //change eqip amount
             equipCurrentCount += 1;
             equipamount.text = (equipCount - equipCurrentCount).ToString();
         }
     }
-
 
     public void DebugLog()
     {
