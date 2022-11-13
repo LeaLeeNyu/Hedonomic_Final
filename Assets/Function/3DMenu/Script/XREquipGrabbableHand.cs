@@ -17,23 +17,26 @@ public class XREquipGrabbableHand : XRGrabInteractable
 
     [SerializeField]private BoxCollider boxCollider;
 
-    private void Start()
-    {
-        //boxCollider = GetComponent<BoxCollider>();
-       
-    }
+    private bool hasbeenSelect = false;
 
     protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
         base.OnSelectEntered(args);
+
+        //
 
         // get the interactor that select the interactable
         if (args.interactorObject is XRBaseControllerInteractor controllerInteractor && controllerInteractor != null)
         {
             var controller = controllerInteractor.xrController;
 
-            if(controller.tag == rightControllerName)
+            //if the grabbable has been select, the it turn to offset select mode
+            if(hasbeenSelect)
+                MatchAttachPoint(controllerInteractor);
+
+            if (controller.tag == rightControllerName)
             {
+                //if select by hand, change the scale
                 gameObject.transform.localScale = new Vector3(handScale * gameObject.transform.localScale.x,
                                                               handScale * gameObject.transform.localScale.y,
                                                               handScale * gameObject.transform.localScale.z);
@@ -44,12 +47,14 @@ public class XREquipGrabbableHand : XRGrabInteractable
                 }
                 else
                 {
+                    //erase the collision between grabbable and xr origin
                     boxCollider.isTrigger = true;
                 }
                 
             }
 
         }
+
     }
     
     protected override void OnSelectExited(SelectExitEventArgs args)
@@ -69,20 +74,15 @@ public class XREquipGrabbableHand : XRGrabInteractable
                 boxCollider.isTrigger = false;
             }
         }
+
+        hasbeenSelect = true;
     }
 
-    //private void Update()
-    //{
-    //    if (isSelected)
-    //    {
-    //        foreach (XRBaseInteractor interactor in interactorsSelecting)
-    //        {
-    //            if (interactor.tag == rightControllerName)
-    //            {
-    //                boxCollider.isTrigger = true;
-    //            }
-    //        }
-    //    }
-    //}
+    private void MatchAttachPoint(XRBaseInteractor interactor)
+    {
+        bool isDirect = interactor is XRDirectInteractor;
+        attachTransform.position = isDirect ? interactor.attachTransform.position : attachTransform.position;
+        attachTransform.rotation = isDirect ? interactor.attachTransform.rotation : attachTransform.rotation;
+    }
 
 }

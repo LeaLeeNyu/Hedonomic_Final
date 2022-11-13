@@ -18,6 +18,18 @@ public class SaveSystem
         stream.Close();
     }
 
+    public static void SaveBagData()
+    {
+        BinaryFormatter formatter = new BinaryFormatter();
+        string path = Application.persistentDataPath + "/BagData.game";
+        FileStream stream = new FileStream(path, FileMode.Create);
+
+        PlayerBagData data = new PlayerBagData();
+        formatter.Serialize(stream, data);
+
+        stream.Close();
+    }
+
     public static PlayerPositionData LoadPosData()
     {
         string path = Application.persistentDataPath + "/PlayerPosition.game";
@@ -35,7 +47,29 @@ public class SaveSystem
         }
         else
         {
-            Debug.Log("No Data Record!");
+            Debug.Log("No Location Data Record!");
+            return null;
+        }
+    }
+
+    public static PlayerBagData LoadBagData()
+    {
+        string path = Application.persistentDataPath + "/BagData.game";
+
+        if (File.Exists(path))
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            FileStream stream = new FileStream(path, FileMode.Open);
+
+            PlayerBagData data = formatter.Deserialize(stream) as PlayerBagData;
+
+            stream.Close();
+
+            return data;
+        }
+        else
+        {
+            Debug.Log("No Location Data Record!");
             return null;
         }
     }

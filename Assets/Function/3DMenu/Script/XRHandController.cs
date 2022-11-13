@@ -80,14 +80,16 @@ public class XRHandController : MonoBehaviour
         else
         {
             JoystickPressed();
-            JoyStickValue();
+
+            if(watchState)
+                JoyStickValue();
         }
     }
 
     //Watch State
     void JoystickPressed()
     {
-        _targetDevice.TryGetFeatureValue(CommonUsages.gripButton, out bool isPressed);
+        _targetDevice.TryGetFeatureValue(CommonUsages.triggerButton, out bool isPressed);
         if (isPressed)
         {
             watchState = true;

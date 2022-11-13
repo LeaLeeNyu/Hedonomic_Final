@@ -46,6 +46,7 @@ public class PlayerController : MonoBehaviour
     void OnJump(InputAction.CallbackContext context)
     {
         bool canJump = isGrounded();
+        Debug.Log(canJump);
         if (canJump)
             _rigidbody.AddForce(Vector3.up * jumpForce);
     }

@@ -62,9 +62,13 @@ public class XRSpawnInteractable : XRSimpleInteractable
             {
                 GameObject spawnObject = SpawnEqip();
 
-                IXRSelectInteractable spawnInteractable = spawnObject.GetComponent<IXRSelectInteractable>();
-                IXRSelectInteractor interactor = controller.GetComponent<IXRSelectInteractor>();
-                interactionManager.SelectEnter(interactor, spawnInteractable);
+                if(spawnObject != null)
+                {
+                    IXRSelectInteractable spawnInteractable = spawnObject.GetComponent<IXRSelectInteractable>();
+                    IXRSelectInteractor interactor = controller.GetComponent<IXRSelectInteractor>();
+
+                    interactionManager.SelectEnter(interactor, spawnInteractable);
+                }
             }
 
         }
