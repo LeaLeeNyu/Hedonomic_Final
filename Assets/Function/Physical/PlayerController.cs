@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
         Collider[] colliders = Physics.OverlapSphere(checkGround.transform.position, 0.1f);
         foreach (Collider collider in colliders)
         {
+            //building material layer index 7, ground layer index 8
             if(collider.tag == "Ground" || collider.tag == "Material")
             {
                 onGround = true;

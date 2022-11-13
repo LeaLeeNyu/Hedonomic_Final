@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/DemoScene/CHENGBO.unity
+    path: Assets/Scenes/DemoScene/PickingUp.unity
     guid: cc80165ca1cd14de3beef8646c9ff951
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 56028036ca5953e4b979e09a85df2a5f, type: 2}

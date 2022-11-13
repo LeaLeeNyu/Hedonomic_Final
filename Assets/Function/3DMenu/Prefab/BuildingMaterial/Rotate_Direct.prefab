@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 4787372800634208229}
   - component: {fileID: 6263288821212524974}
   - component: {fileID: 6322266436573505014}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rotate_Direct
   m_TagString: Material
   m_Icon: {fileID: 0}
