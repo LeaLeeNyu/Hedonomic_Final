@@ -20,85 +20,28 @@ public class mainScene : MonoBehaviour
     private Vector3 velocity;
     public GameObject myPrefab1;
 
-    //public GameObject myPrefab;
+    public GameObject[] materialList;
 
-    // Start is called before the first frame update
-    void Start()
-    {
+    [SerializeField] private float maxBoundary = 5.0f;
+    [SerializeField] private float minBoundary = -5.0f;
+    [SerializeField] private float timePeriod = 80f;
 
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        //Debug.Log(destroyedCounter + " gameobjects have been destroyed");
-        //Vector3 player_postion = Player.transform.position;
-        //float x = player_postion.x;
-        //float y = player_postion.y;
-        //float z = player_postion.z;
 
-        int num1 = Random.Range(-5, 5); //x
-        int num2 = Random.Range(-5, 5); //z
+        float xPos = Random.Range(minBoundary, maxBoundary); //x
+        float yPos = Random.Range(minBoundary, maxBoundary); //z
 
         if (0 <= destroyedCounter && destroyedCounter <= 10)
         {
-          displayText.text = "Lv. " + destroyedCounter;
-          //Banana
-          // if (Time.frameCount % 95 == 0)
-          // {
-          //     //Debug.Log("Ding!");
-          //     Instantiate(myPrefab1, new Vector3(num1, 20, num2), Quaternion.identity);
-          // }
-          //Cheese
-          if (Time.frameCount % 80 == 0)
-          {
-              //Debug.Log("Ding!");
-              Instantiate(myPrefab1, new Vector3(num1, 20, num2), Quaternion.identity);
-          }
-          //Hamburger
-          // if (Time.frameCount % 100 == 0)
-          // {
-          //     //Debug.Log("Ding!");
-          //     Instantiate(myPrefab3, new Vector3(num1, 20, num2), Quaternion.identity);
-          // }
-          //Watermelon
-          // if (Time.frameCount % 96 == 0)
-          // {
-          //     //Debug.Log("Ding!");
-          //     Instantiate(myPrefab4, new Vector3(num1, 20, num2), Quaternion.identity);
-          // }
-          //Hotdog
-          // if (Time.frameCount % 90 == 0)
-          // {
-          //     //Debug.Log("Ding!");
-          //     Instantiate(myPrefab5, new Vector3(num1, 20, num2), Quaternion.identity);
-          // }
+            displayText.text = "Lv. " + destroyedCounter;
+
+            //Spawn the materials
+            if (Time.frameCount % timePeriod == 0)
+            {
+                int randomIndex = Random.Range(0, materialList.Length);
+                Instantiate(myPrefab1, new Vector3(xPos, 20, yPos), Quaternion.identity);
+            }
         }
-        // if(z > 18){
-        //   if(x > 3){
-        //     FindObjectOfType<AudioManager>().Stop("SickoMode01");
-        //     FindObjectOfType<AudioManager>().Stop("SickoMode03");
-        //     // AudioSource.PlayClipAtPoint(SickoMode02, transform.position, 100F);
-        //     FindObjectOfType<AudioManager>().Play("SickoMode02");
-        //   }
-        // }
-        // if(z > 16 && z < 18){
-        //   if(x > 0 && x < 3){
-        //     FindObjectOfType<AudioManager>().Stop("SickoMode01");
-        //     FindObjectOfType<AudioManager>().Stop("SickoMode02");
-        //     // AudioSource.PlayClipAtPoint(SickoMode02, transform.position, 100F);
-        //     FindObjectOfType<AudioManager>().Play("SickoMode03");
-        //   }
-        // }
-        //displayText.text = "$ "+destroyedCounter;
-
-        //You can use modulo as a counter when used in conjunction with frameCount
-        //Debug.Log(Time.frameCount%120);
-
-        // if (Time.frameCount % 10 == 0)
-        // {
-        //     Debug.Log("Ding!");
-        //     Instantiate(myPrefab, new Vector3(0, 5, 0), Quaternion.identity);
-        // }
     }
 }

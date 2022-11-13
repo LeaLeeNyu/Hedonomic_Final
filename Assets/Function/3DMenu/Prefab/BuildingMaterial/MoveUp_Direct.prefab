@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1333397830098856759}
   - component: {fileID: 1333397830098856758}
   - component: {fileID: 2115989503971080177}
+  - component: {fileID: 4576379508349935905}
   m_Layer: 7
   m_Name: MoveUp_Direct
   m_TagString: Material
@@ -233,6 +234,26 @@ MonoBehaviour:
   m_AttachPointCompatibilityMode: 0
   handScale: 1
   objectCollider: {fileID: 1333397830098856759}
+--- !u!95 &4576379508349935905
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333397830098856753}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7934f15667facae4c918f83adbdab278, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &9106266753349247152
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,16 +8,6 @@ using Random = UnityEngine.Random;
 
 public class eliminationRect : MonoBehaviour
 {
-    // public int a = 0;
-    // public int b = 0;
-    // public int c = 0;
-    //private Vector3 velocity;
-    //public GameObject Player;
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void Update()
