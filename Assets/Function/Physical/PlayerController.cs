@@ -53,6 +53,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        //if player falling down, they will come back to platform
         if (transform.position.y <= -5)
         {
             PlayerPositionData positionData = SaveSystem.LoadPosData();
@@ -61,4 +62,5 @@ public class PlayerController : MonoBehaviour
             transform.position = pos;
         }
     }
+
 }

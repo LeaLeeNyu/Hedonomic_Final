@@ -15,7 +15,7 @@ public class XREquipGrabbableHand : XRGrabInteractable
 
     private string rightControllerName = "RightHand";
 
-    [SerializeField]private BoxCollider boxCollider;
+    [SerializeField]private Collider objectCollider;
 
     private bool hasbeenSelect = false;
 
@@ -41,14 +41,14 @@ public class XREquipGrabbableHand : XRGrabInteractable
                                                               handScale * gameObject.transform.localScale.y,
                                                               handScale * gameObject.transform.localScale.z);
 
-                if(boxCollider == null)
+                if(objectCollider == null)
                 {
                     Debug.Log("this grabbable does not have collider");
                 }
                 else
                 {
                     //erase the collision between grabbable and xr origin
-                    boxCollider.isTrigger = true;
+                    objectCollider.isTrigger = true;
                 }
                 
             }
@@ -71,7 +71,7 @@ public class XREquipGrabbableHand : XRGrabInteractable
                                                                gameObject.transform.localScale.y / handScale,
                                                                gameObject.transform.localScale.z / handScale);
 
-                boxCollider.isTrigger = false;
+                objectCollider.isTrigger = false;
             }
         }
 

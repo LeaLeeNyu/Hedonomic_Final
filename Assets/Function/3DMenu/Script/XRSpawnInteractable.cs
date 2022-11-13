@@ -59,7 +59,7 @@ public class XRSpawnInteractable : XRSimpleInteractable
             var controller = controllerInteractor.xrController;
 
             if (controller.tag == rightControllerName)
-            {
+            { 
                 GameObject spawnObject = SpawnEqip();
 
                 if(spawnObject != null)
