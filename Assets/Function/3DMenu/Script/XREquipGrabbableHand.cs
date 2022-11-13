@@ -5,9 +5,6 @@ using UnityEngine;
 using UnityEngine.InputSystem.XR;
 using UnityEngine.XR.Interaction.Toolkit;
 
-/*
- When player hold the item on the hands, the equipments become smaller
- */
 
 public class XREquipGrabbableHand : XRGrabInteractable
 {
