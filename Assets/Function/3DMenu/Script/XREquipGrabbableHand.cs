@@ -8,7 +8,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class XREquipGrabbableHand : XRGrabInteractable
 {
-    [SerializeField] private float handScale = 0.1f;
+    [SerializeField] private float handScale = 1f;
 
     private string rightControllerName = "RightHand";
 

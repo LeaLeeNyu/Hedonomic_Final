@@ -14,8 +14,9 @@ TagManager:
   - MoveUp
   - MoveForward
   - Material
-  - Dream1Canvas
-  - Dream1Socket
+  - DreamOne
+  - DreamOneSocket
+  - DreamOneCanvas
   layers:
   - Default
   - TransparentFX

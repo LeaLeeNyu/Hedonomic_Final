@@ -1054,10 +1054,10 @@ GameObject:
   - component: {fileID: 5084163452480327929}
   - component: {fileID: 3017911849140710322}
   - component: {fileID: 7050430567690499877}
-  - component: {fileID: 4273868847434632498}
+  - component: {fileID: 2319488730215203176}
   m_Layer: 0
   m_Name: SpawnInteractable
-  m_TagString: Dream1Canvas
+  m_TagString: DreamOneCanvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1111,8 +1111,8 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!114 &4273868847434632498
+  m_CollisionDetection: 2
+--- !u!114 &2319488730215203176
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1121,7 +1121,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1901878695920065042}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a57ac29fd2fb76247b83b08cae0808b0, type: 3}
+  m_Script: {fileID: 11500000, guid: fce19268fdf1a4649be72c759ce9d5b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
@@ -1190,10 +1190,11 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  buildingMaterial: {fileID: 11400000, guid: cba982dab7f9fb54ca2cf7e88ba548b1, type: 2}
-  equipP: {fileID: 1333397830098856753, guid: 7ec7a3897eb350d4785411adc51bdd8f, type: 3}
+  buildingMaterial: {fileID: 11400000, guid: 63d8fb74cc9a3f245857ddc605f30ab4, type: 2}
+  equipP: {fileID: 1333397830098856753, guid: 81b81011275bba44a97fc9b4788f0578, type: 3}
   spawnPos: {fileID: 5084163452480327929}
   equipamount: {fileID: 7559614676869357693}
+  dreamCanvasObject: {fileID: 4084132779512962291}
 --- !u!1 &1936248657220095094
 GameObject:
   m_ObjectHideFlags: 0
@@ -3079,6 +3080,7 @@ MonoBehaviour:
   - {fileID: 7204862484971734376}
   - {fileID: 8476280372337522800}
   - {fileID: 6349393389005019562}
+  - {fileID: 1707522372413806229}
 --- !u!1 &7204862484971734376
 GameObject:
   m_ObjectHideFlags: 0
@@ -4140,8 +4142,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8234520618905580128, guid: c87ccfcdce240d8449c1a5d8b37de228, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234520618905580128, guid: c87ccfcdce240d8449c1a5d8b37de228, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8234520618905580128, guid: c87ccfcdce240d8449c1a5d8b37de228, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c87ccfcdce240d8449c1a5d8b37de228, type: 3}
+--- !u!1 &4084132779512962291 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1532709552381456, guid: c87ccfcdce240d8449c1a5d8b37de228, type: 3}
+  m_PrefabInstance: {fileID: 4082707547223474915}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4087281710222721511 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4576087682646788, guid: c87ccfcdce240d8449c1a5d8b37de228, type: 3}

@@ -5,9 +5,9 @@ using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class XRSpawnInteractable : XRSimpleInteractable
-{
-    private int equipCount;
-    private int equipCurrentCount = 0;
+{ 
+    protected int equipCount;
+    protected int equipCurrentCount = 0;
     public BuildingMaterialSO buildingMaterial;
     [SerializeField] private GameObject equipP;
     [SerializeField] private Transform spawnPos;
@@ -16,7 +16,7 @@ public class XRSpawnInteractable : XRSimpleInteractable
     private string rightControllerName = "RightHand";
 
     //Canvas Interface
-    [SerializeField] private TMP_Text equipamount;
+    [SerializeField] protected TMP_Text equipamount;
 
     private void Start()
     {

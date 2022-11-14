@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b95aa5d07428ded46aea927bfcc192d2, type: 3}
-  m_Name: Dream1SO
+  m_Name: DreamOneSO
   m_EditorClassIdentifier: 
   id: Dream1
   description: This is a sphere dream

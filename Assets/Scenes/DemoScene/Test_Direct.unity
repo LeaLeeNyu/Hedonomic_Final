@@ -175,7 +175,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 406f981dfa0d762468889233207ff9d3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -868,7 +868,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2789617965094271184, guid: 91733c946be71b44597658a9d03fd020, type: 3}
       propertyPath: m_Name
-      value: Deliver Dream
+      value: Deliver Dream One
+      objectReference: {fileID: 0}
+    - target: {fileID: 2789617965094271184, guid: 91733c946be71b44597658a9d03fd020, type: 3}
+      propertyPath: m_TagString
+      value: DreamOneSocket
       objectReference: {fileID: 0}
     - target: {fileID: 3758091592594954312, guid: 91733c946be71b44597658a9d03fd020, type: 3}
       propertyPath: m_Materials.Array.data[0]
