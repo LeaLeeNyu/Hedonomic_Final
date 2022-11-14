@@ -16,7 +16,6 @@ public class SpawnMaterial : MonoBehaviour
 
     //public GameObject Player;
     public int destroyedCounter;
-    //"Text" will not be an available data type until you add "using UnityEngine.UI;"
     public Text displayText;
     private Vector3 velocity;
     public GameObject myPrefab1;
