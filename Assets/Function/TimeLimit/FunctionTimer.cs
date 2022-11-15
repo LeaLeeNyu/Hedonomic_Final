@@ -6,15 +6,11 @@ using UnityEngine.Events;
 
 public class FunctionTimer
 {
-    private UnityAction startAction;
-    private UnityAction endAction;
     public float timer;
     private bool isDestoryed = false;
 
-    public FunctionTimer(UnityAction startAction,UnityAction endAction, float timer)
+    public FunctionTimer(float timer)
     {
-        this.startAction = startAction;
-        this.endAction = endAction;
         this.timer = timer;
     }
 
@@ -25,8 +21,6 @@ public class FunctionTimer
             timer -= Time.deltaTime;
             if (timer < 0)
             {
-                //trigger the end action
-                endAction.Invoke();
                 DestorySelf();
             }
         }
@@ -35,7 +29,6 @@ public class FunctionTimer
     private void DestorySelf()
     {
         isDestoryed = true;
-        endAction.Invoke();
     }
 
     public void ResetSelf(float timer)

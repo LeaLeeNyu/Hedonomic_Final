@@ -40,6 +40,7 @@ public class SpawnMaterial : MonoBehaviour
         TimeLimitation.endTime -= EndSpawnMaterial;
     }
 
+
     void Update()
     {
         if (startSpawn)
