@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 /*
  * Control the starting and ending of collecting the building material 
@@ -21,6 +23,9 @@ public class TimeLimitation : MonoBehaviour
 
     //start counting the spawning material time
     public static bool start = false;
+
+    //time counter interface
+    [SerializeField] public Text timeCounter;
 
     private void Awake()
     {
@@ -44,8 +49,10 @@ public class TimeLimitation : MonoBehaviour
             endTime.Invoke();
         }
 
-        //Time counter
-        
+        //Time counter interface
+        timeCounter.text = timer.timer.ToString();
+
+
     }
 
     public void StartTime()

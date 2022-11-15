@@ -9,8 +9,6 @@ using UnityEngine.SceneManagement;
 /*
  * To spawn the material in the picking scene
  */
-
-
 public class SpawnMaterial : MonoBehaviour
 {
 
@@ -52,7 +50,7 @@ public class SpawnMaterial : MonoBehaviour
             if (Time.frameCount % timePeriod == 0)
             {
                 int randomIndex = Random.Range(0, materialList.Length);
-                Instantiate(myPrefab1, new Vector3(xPos, 20, yPos), Quaternion.identity);
+                Instantiate(materialList[randomIndex], new Vector3(xPos, 20, yPos), Quaternion.identity);
             }
         }
     }
