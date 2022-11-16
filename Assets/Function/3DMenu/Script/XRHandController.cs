@@ -26,7 +26,9 @@ public class XRHandController : MonoBehaviour
     #endregion
 
     //Watch UI 
-    private bool watchState = false;
+    public static bool watchState = false;
+    public static event UnityAction watchOn = delegate { };
+    public static event UnityAction watchOff = delegate { };
     [SerializeField] private GameObject watchCanvas;
 
     //Equipment canvas object
@@ -93,10 +95,12 @@ public class XRHandController : MonoBehaviour
         if (isPressed)
         {
             watchState = true;
+            watchOn.Invoke();
         }
         else
         {
             watchState = false;
+            watchOff.Invoke();
         }
         watchCanvas.SetActive(watchState);
     }
