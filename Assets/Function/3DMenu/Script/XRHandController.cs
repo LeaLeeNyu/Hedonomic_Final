@@ -71,6 +71,13 @@ public class XRHandController : MonoBehaviour
     private void Start()
     {
         InitializeHand();
+
+        foreach(GameObject equipObject in equipObjects)
+        {
+            equipObject.SetActive(false);
+        }
+
+        equipObjects[equipListNum].SetActive(true); 
     }
 
     private void Update()

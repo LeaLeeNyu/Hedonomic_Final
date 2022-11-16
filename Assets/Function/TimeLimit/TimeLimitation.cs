@@ -43,7 +43,7 @@ public class TimeLimitation : MonoBehaviour
         {
             timer.UpdateTimer();
         }
-        else if(timer == null)
+        else if(start && timer == null)
         {
             start = false;
             endTime.Invoke();

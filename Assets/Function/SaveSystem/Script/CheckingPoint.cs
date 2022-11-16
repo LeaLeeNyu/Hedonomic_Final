@@ -11,11 +11,12 @@ public class CheckingPoint : MonoBehaviour
         checkPointPos = transform.position; 
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if(collision.gameObject.layer == 6)
+        if (other.gameObject.layer == 6)
         {
             SaveSystem.SavePlayerPos(this);
         }
     }
+
 }
