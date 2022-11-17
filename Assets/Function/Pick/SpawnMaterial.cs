@@ -18,8 +18,8 @@ public class SpawnMaterial : MonoBehaviour
     private Vector3 velocity;
     public GameObject[] materialList;
 
-    [SerializeField] private float maxBoundary = 5.0f;
-    [SerializeField] private float minBoundary = -5.0f;
+    [SerializeField] private float maxBoundary = 130.0f;
+    [SerializeField] private float minBoundary = -80.0f;
     [SerializeField] private float timePeriod = 80f;
 
     private bool startSpawn = false;

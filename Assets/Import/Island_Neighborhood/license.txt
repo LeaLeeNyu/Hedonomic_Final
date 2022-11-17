@@ -1,0 +1,11 @@
+Model Information:
+* title:	Island Neighborhood
+* source:	https://sketchfab.com/3d-models/island-neighborhood-637e207ce91c4001b3aadba7a06b58eb
+* author:	Isaacson School at Colorado Mountain College (https://sketchfab.com/isaacsonschool)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Island Neighborhood" (https://sketchfab.com/3d-models/island-neighborhood-637e207ce91c4001b3aadba7a06b58eb) by Isaacson School at Colorado Mountain College (https://sketchfab.com/isaacsonschool) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

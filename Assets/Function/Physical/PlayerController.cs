@@ -74,6 +74,10 @@ public class PlayerController : MonoBehaviour
         {
             SceneManager.LoadScene("Chengbo-PickUp");
         }
+        if (other.gameObject.name == "Warp_Sphere2")
+        {
+            SceneManager.LoadScene("Chengbo-Base");
+        }
 
     }
 

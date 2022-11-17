@@ -1,0 +1,11 @@
+Model Information:
+* title:	Shishi Odoshi Environment
+* source:	https://sketchfab.com/3d-models/shishi-odoshi-environment-f379f850ae654ed69f06446358e71afa
+* author:	robin.makino.smith (https://sketchfab.com/robin.makino.smith)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Shishi Odoshi Environment" (https://sketchfab.com/3d-models/shishi-odoshi-environment-f379f850ae654ed69f06446358e71afa) by robin.makino.smith (https://sketchfab.com/robin.makino.smith) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
