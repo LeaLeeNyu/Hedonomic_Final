@@ -17,6 +17,7 @@ TagManager:
   - DreamOne
   - DreamOneSocket
   - DreamOneCanvas
+  - Stair
   layers:
   - Default
   - TransparentFX

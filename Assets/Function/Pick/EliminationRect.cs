@@ -19,33 +19,35 @@ public class EliminationRect : MonoBehaviour
     [SerializeField] private BuildingMaterialSO rotate;
     [SerializeField] private BuildingMaterialSO moveUp;
     [SerializeField] private BuildingMaterialSO moveForward;
+    [SerializeField] private BuildingMaterialSO stair;
 
-    void OnCollisionEnter(Collision other)
+    void OnTriggerEnter(Collider other)
     {
         if (TimeLimitation.start)
         {
             Destroy(other.gameObject);
-            if(other.gameObject.tag == "Box")
+
+            if (other.gameObject.tag == "Box")
             {
                 box.amount += 1;
-            }else if(other.gameObject.tag == "MoveUp")
+            }
+            if(other.gameObject.tag == "MoveUp")
             {
                 moveUp.amount += 1;
-            }else if(other.gameObject.tag == "MoveForward")
+            }
+            if(other.gameObject.tag == "MoveForward")
             {
                 moveForward.amount += 1;
-            }else if(other.gameObject.tag == "Rotate")
+            }
+            if(other.gameObject.tag == "Rotate")
             {
                 rotate.amount += 1;
             }
+            if(other.gameObject.tag == "Stair")
+            {
+                stair.amount += 1;
+            }
         }
-
-
-        //if (other.gameObject.name == "Wool")
-        //{
-        //    SceneManager.LoadScene("Scene II");
-        //} 
-
 
     }
 

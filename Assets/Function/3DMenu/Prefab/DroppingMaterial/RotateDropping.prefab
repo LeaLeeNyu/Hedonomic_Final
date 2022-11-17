@@ -14604,7 +14604,7 @@ GameObject:
   - component: {fileID: 5841806371355902728}
   m_Layer: 0
   m_Name: RotateDropping
-  m_TagString: Untagged
+  m_TagString: Rotate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

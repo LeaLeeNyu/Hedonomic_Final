@@ -4,6 +4,8 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using static UnityEngine.GraphicsBuffer;
+using UnityEngine.SceneManagement;
+using System;
 
 public class PlayerController : MonoBehaviour
 {
@@ -63,6 +65,16 @@ public class PlayerController : MonoBehaviour
             Vector3 pos = new Vector3(positionData.position[0], positionData.position[1], positionData.position[2]);
             transform.position = pos;
         }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+
+        if (other.gameObject.name == "Warp_Sphere")
+        {
+            SceneManager.LoadScene("Chengbo-PickUp");
+        }
+
     }
 
 }

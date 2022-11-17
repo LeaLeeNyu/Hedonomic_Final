@@ -16,8 +16,6 @@ public class SpawnMaterial : MonoBehaviour
     public int destroyedCounter;
     public Text displayText;
     private Vector3 velocity;
-    public GameObject myPrefab1;
-
     public GameObject[] materialList;
 
     [SerializeField] private float maxBoundary = 5.0f;
