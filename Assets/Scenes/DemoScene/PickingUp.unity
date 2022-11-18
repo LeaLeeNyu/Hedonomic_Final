@@ -1460,7 +1460,7 @@ Canvas:
   m_GameObject: {fileID: 818053279}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 800666681}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -1503,6 +1503,14 @@ PrefabInstance:
     - target: {fileID: 1884132920650490809, guid: 30abcc6a592c72e49af99e828db00ee7, type: 3}
       propertyPath: m_Name
       value: Fantasy_Garden_-_Graybox
+      objectReference: {fileID: 0}
+    - target: {fileID: 5111521614516759703, guid: 30abcc6a592c72e49af99e828db00ee7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 5111521614516759703, guid: 30abcc6a592c72e49af99e828db00ee7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 7371063874952593813, guid: 30abcc6a592c72e49af99e828db00ee7, type: 3}
       propertyPath: m_RootOrder
@@ -1613,6 +1621,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5503319290452838765, guid: 092ed8a988b9c9c4b944d4acc036d9ae, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8002608114191251168, guid: 092ed8a988b9c9c4b944d4acc036d9ae, type: 3}
       propertyPath: m_RootOrder
       value: 5

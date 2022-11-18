@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 /*
  * To spawn the material in the picking scene
  */
-public class SpawnMaterial : MonoBehaviour
+public class SpawnMaterial:MonoBehaviour
 {
 
     //public GameObject Player;
