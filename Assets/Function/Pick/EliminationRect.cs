@@ -29,23 +29,23 @@ public class EliminationRect : MonoBehaviour
 
             if (other.gameObject.tag == "Box")
             {
-                box.amount += 1;
+                //box.amount += 1;
             }
             if(other.gameObject.tag == "MoveUp")
             {
-                moveUp.amount += 1;
+                //moveUp.amount += 1;
             }
             if(other.gameObject.tag == "MoveForward")
             {
-                moveForward.amount += 1;
+                //moveForward.amount += 1;
             }
             if(other.gameObject.tag == "Rotate")
             {
-                rotate.amount += 1;
+                //rotate.amount += 1;
             }
             if(other.gameObject.tag == "Stair")
             {
-                stair.amount += 1;
+                //stair.amount += 1;
             }
         }
 
