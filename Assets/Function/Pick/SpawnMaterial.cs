@@ -18,8 +18,8 @@ public class SpawnMaterial:MonoBehaviour
     private Vector3 velocity;
     public GameObject[] materialList;
 
-    [SerializeField] private float maxBoundary = 130.0f;
-    [SerializeField] private float minBoundary = -80.0f;
+    // [SerializeField] private float maxBoundary = 60.0f;
+    // [SerializeField] private float minBoundary = -3.0f;
     [SerializeField] private float timePeriod = 80f;
 
     private bool startSpawn = false;
@@ -41,14 +41,16 @@ public class SpawnMaterial:MonoBehaviour
     {
         if (startSpawn)
         {
-            float xPos = Random.Range(minBoundary, maxBoundary); //x
-            float yPos = Random.Range(minBoundary, maxBoundary); //z
+            // float xPos = Random.Range(minBoundary, maxBoundary); //x
+            // float yPos = Random.Range(minBoundary, maxBoundary); //z
+            int num1 = Random.Range(-3, 60); //x
+            int num2 = Random.Range(-3, 60); //z
 
             //Spawn the materials
             if (Time.frameCount % timePeriod == 0)
             {
                 int randomIndex = Random.Range(0, materialList.Length);
-                Instantiate(materialList[randomIndex], new Vector3(xPos, 20, yPos), Quaternion.identity);
+                Instantiate(materialList[randomIndex], new Vector3(num1, 20, num2), Quaternion.identity);
             }
         }
     }

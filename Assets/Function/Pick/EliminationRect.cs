@@ -25,26 +25,31 @@ public class EliminationRect : MonoBehaviour
     {
         if (TimeLimitation.start)
         {
-            Destroy(other.gameObject);
+            // Destroy(other.gameObject);
 
             if (other.gameObject.tag == "Box")
             {
+                Destroy(other.gameObject);
                 //box.amount += 1;
             }
             if(other.gameObject.tag == "MoveUp")
             {
+                Destroy(other.gameObject);
                 //moveUp.amount += 1;
             }
             if(other.gameObject.tag == "MoveForward")
             {
+                Destroy(other.gameObject);
                 //moveForward.amount += 1;
             }
             if(other.gameObject.tag == "Rotate")
             {
+                Destroy(other.gameObject);
                 //rotate.amount += 1;
             }
             if(other.gameObject.tag == "Stair")
             {
+                Destroy(other.gameObject);
                 //stair.amount += 1;
             }
         }
