@@ -395,7 +395,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.01
-  far clip plane: 1000
+  far clip plane: 10000
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -908,7 +908,7 @@ MonoBehaviour:
   m_UpdateTrackingType: 0
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
-  m_ModelPrefab: {fileID: 7971470444953957568, guid: 91a6522d8ded1aa4593d50a792c9c29c, type: 3}
+  m_ModelPrefab: {fileID: 7971470444953957568, guid: bced37e9198c1ac4b82787e42aeb14b9, type: 3}
   m_ModelParent: {fileID: 0}
   m_Model: {fileID: 0}
   m_AnimateModel: 0

@@ -6,6 +6,7 @@ using UnityEngine.XR;
 public class XRHandControllerFinal : XRHandController
 {
     [SerializeField]private Animator _animator;
+    [SerializeField] private GameObject _glow;
     protected override void Update()
     {
         base.Update();
@@ -28,10 +29,20 @@ public class XRHandControllerFinal : XRHandController
         if (_targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float trigger))
         {
             _animator.SetFloat("Trigger", trigger);
+
+            if (trigger >= 0.5f)
+            {
+                _glow.SetActive(true);
+            }
+            else
+            {
+                _glow.SetActive(false);
+            }
         }
         else
         {
             _animator.SetFloat("Trigger", 0);
+            _glow.SetActive(false);
         }
     }
 }
