@@ -18,8 +18,7 @@ public class XRHandController : MonoBehaviour
     //Stores what kind of characteristics we¡¯re looking for with our Input Device when we search for it later
     [HideInInspector] public InputDeviceCharacteristics inputDeviceCharacteristics;
     //Stores the InputDevice that we¡¯re Targeting once we find it in InitializeHand()
-    private InputDevice _targetDevice;
-    private Animator _handAnimator;
+    protected InputDevice _targetDevice;
     //Hand Model Name String
     [SerializeField] private string leftHandName;
     [SerializeField] private string rightHandName;
@@ -80,15 +79,15 @@ public class XRHandController : MonoBehaviour
         equipObjects[equipListNum].SetActive(true); 
     }
 
-    private void Update()
+    protected virtual void Update()
     {
         if (!_targetDevice.isValid)
         {
             InitializeHand();
         }
-        else
+        else if(handType == HandType.Left)
         {
-            JoystickPressed();
+            TriggerPressed();
 
             if(watchState)
                 JoyStickValue();
@@ -96,7 +95,7 @@ public class XRHandController : MonoBehaviour
     }
 
     //Watch State
-    void JoystickPressed()
+    void TriggerPressed()
     {
         _targetDevice.TryGetFeatureValue(CommonUsages.triggerButton, out bool isPressed);
         if (isPressed)

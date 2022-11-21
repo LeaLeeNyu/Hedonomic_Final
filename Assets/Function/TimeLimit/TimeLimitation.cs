@@ -51,8 +51,6 @@ public class TimeLimitation : MonoBehaviour
 
         //Time counter interface
         timeCounter.text = timer.timer.ToString();
-
-
     }
 
     public void StartTime()

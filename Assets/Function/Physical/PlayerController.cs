@@ -67,6 +67,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    //Portal 
     void OnTriggerEnter(Collider other)
     {
 

@@ -12,48 +12,58 @@ using Random = UnityEngine.Random;
 
 public class EliminationRect : MonoBehaviour
 {
+    private int box, moveUp, moveForward, rotate, stair = 0;
 
-    public SpawnMaterial mainSceneObject;
+    private void OnEnable()
+    {
+        TimeLimitation.endTime += SaveData;
+    }
 
-    [SerializeField] private BuildingMaterialSO box;
-    [SerializeField] private BuildingMaterialSO rotate;
-    [SerializeField] private BuildingMaterialSO moveUp;
-    [SerializeField] private BuildingMaterialSO moveForward;
-    [SerializeField] private BuildingMaterialSO stair;
+    private void OnDisable()
+    {
+        TimeLimitation.endTime -= SaveData;
+    }
 
     void OnTriggerEnter(Collider other)
     {
         if (TimeLimitation.start)
-        {
-            // Destroy(other.gameObject);
-
+        {            
             if (other.gameObject.tag == "Box")
             {
                 Destroy(other.gameObject);
-                //box.amount += 1;
+                box += 1;
             }
             if(other.gameObject.tag == "MoveUp")
             {
                 Destroy(other.gameObject);
-                //moveUp.amount += 1;
+                moveUp += 1;
             }
             if(other.gameObject.tag == "MoveForward")
             {
                 Destroy(other.gameObject);
-                //moveForward.amount += 1;
+                moveForward += 1;
             }
             if(other.gameObject.tag == "Rotate")
             {
                 Destroy(other.gameObject);
-                //rotate.amount += 1;
+                rotate += 1;
             }
             if(other.gameObject.tag == "Stair")
             {
                 Destroy(other.gameObject);
-                //stair.amount += 1;
+                stair += 1;
             }
         }
 
+    }
+
+    void SaveData()
+    {
+        SaveSystem.SaveBagData("Box", box);
+        SaveSystem.SaveBagData("MoveUp", moveUp);
+        SaveSystem.SaveBagData("MoveForward", moveForward);
+        SaveSystem.SaveBagData("Rotate", rotate);
+        SaveSystem.SaveBagData("Stair", stair);
     }
 
 }
