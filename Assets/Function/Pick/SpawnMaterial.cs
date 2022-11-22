@@ -53,7 +53,7 @@ public class SpawnMaterial:MonoBehaviour
             {
                 int randomIndex = Random.Range(0, materialList.Length);
                 GameObject instance = Instantiate(materialList[randomIndex], new Vector3(xPos, 20, zPos), Quaternion.identity);
-                instance.transform.SetParent(this.transform, false);
+                instance.transform.SetParent(this.transform,true);
             }
         }
     }
@@ -68,7 +68,7 @@ public class SpawnMaterial:MonoBehaviour
         startSpawn = false;
         foreach (Transform child in this.transform)
         {
-            Destroy(child);
+            Destroy(child.gameObject);
         }
     }
 }

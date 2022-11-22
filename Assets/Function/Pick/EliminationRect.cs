@@ -12,7 +12,7 @@ using Random = UnityEngine.Random;
 
 public class EliminationRect : MonoBehaviour
 {
-    private int box, moveUp, moveForward, rotate, stair = 0;
+    public int box, moveUp, moveForward, rotate, stair = 0;
 
     private void OnEnable()
     {

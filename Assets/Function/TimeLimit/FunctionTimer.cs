@@ -9,10 +9,9 @@ public class FunctionTimer
     public float timer;
     public bool isDestoryed = false;
 
-    public FunctionTimer(float timer,bool isDestoryed)
+    public FunctionTimer(float timer)
     {
         this.timer = timer;
-        this.isDestoryed = isDestoryed;
     }
 
     public void UpdateTimer()
@@ -20,6 +19,7 @@ public class FunctionTimer
         if (!isDestoryed)
         {
             timer -= Time.deltaTime;
+            
             if (timer < 0.01f)
             {
                 DestorySelf();

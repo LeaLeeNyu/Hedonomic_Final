@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1320508704931082640}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0.708, z: -0.775}
+  m_LocalPosition: {x: 0, y: 0.708, z: -0.812}
   m_LocalScale: {x: 1, y: 1, z: 0.33}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -111,6 +111,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c7d295834211124788976f731aa99a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  box: 0
+  moveUp: 0
+  moveForward: 0
+  rotate: 0
+  stair: 0
 --- !u!1 &5023876548935138835
 GameObject:
   m_ObjectHideFlags: 0
