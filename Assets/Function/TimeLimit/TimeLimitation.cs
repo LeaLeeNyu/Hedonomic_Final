@@ -20,16 +20,17 @@ public class TimeLimitation : MonoBehaviour
     
     [SerializeField] private float time;
     private FunctionTimer timer;
+    private bool isDestory = false;
 
     //start counting the spawning material time
     public static bool start = false;
 
     //time counter interface
-    [SerializeField] public Text timeCounter;
+    [HideInInspector]public static TMP_Text timeLimitationText;
 
     private void Awake()
     {
-        timer = new FunctionTimer(time);
+        timer = new FunctionTimer(time, isDestory);
     }
 
     private void Start()
@@ -39,18 +40,21 @@ public class TimeLimitation : MonoBehaviour
 
     private void Update()
     {
-        if (start && timer!= null)
+        if (start && !isDestory)
         {
             timer.UpdateTimer();
         }
-        else if(start && timer == null)
+       
+        if(start && isDestory)
         {
             start = false;
             endTime.Invoke();
+            Debug.Log("End!");
         }
 
         //Time counter interface
-        timeCounter.text = timer.timer.ToString();
+        if(timeLimitationText != null)
+            timeLimitationText.text = timer.timer.ToString();
     }
 
     public void StartTime()

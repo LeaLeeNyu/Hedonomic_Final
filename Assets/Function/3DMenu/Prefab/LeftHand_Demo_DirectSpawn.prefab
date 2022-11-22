@@ -658,7 +658,7 @@ MonoBehaviour:
   buildingMaterial: {fileID: 11400000, guid: bab97f31141f27e43ac6a028dde73964, type: 2}
   equipP: {fileID: 1333397830098856753, guid: 419d7f7ed64c6584f8d6a4d33493d3e7, type: 3}
   spawnPos: {fileID: 4974835909558990276}
-  equipamount: {fileID: 7890017707845710704}
+  equipAmountText: {fileID: 7890017707845710704}
 --- !u!54 &1595516353531840033
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1193,7 +1193,7 @@ MonoBehaviour:
   buildingMaterial: {fileID: 11400000, guid: 63d8fb74cc9a3f245857ddc605f30ab4, type: 2}
   equipP: {fileID: 1333397830098856753, guid: 81b81011275bba44a97fc9b4788f0578, type: 3}
   spawnPos: {fileID: 5084163452480327929}
-  equipamount: {fileID: 7559614676869357693}
+  equipAmountText: {fileID: 7559614676869357693}
   dreamCanvasObject: {fileID: 4084132779512962291}
 --- !u!1 &1936248657220095094
 GameObject:
@@ -3021,7 +3021,7 @@ MonoBehaviour:
   buildingMaterial: {fileID: 11400000, guid: cba982dab7f9fb54ca2cf7e88ba548b1, type: 2}
   equipP: {fileID: 1333397830098856753, guid: 7ec7a3897eb350d4785411adc51bdd8f, type: 3}
   spawnPos: {fileID: 8765757160675811585}
-  equipamount: {fileID: 1737314184006154027}
+  equipAmountText: {fileID: 1737314184006154027}
 --- !u!1 &7098302624965208613
 GameObject:
   m_ObjectHideFlags: 0
@@ -3402,7 +3402,7 @@ MonoBehaviour:
   buildingMaterial: {fileID: 11400000, guid: c141d6593c9bc224cbc0400e556f255c, type: 2}
   equipP: {fileID: 4585494135920098850, guid: 0878686bd1e1f5643aeda4590ac881b6, type: 3}
   spawnPos: {fileID: 1759053632393578726}
-  equipamount: {fileID: 6248813132378928227}
+  equipAmountText: {fileID: 6248813132378928227}
 --- !u!54 &6435320810898341308
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3788,7 +3788,7 @@ MonoBehaviour:
   buildingMaterial: {fileID: 11400000, guid: d4b471d97a6f602428dff1ddf9136341, type: 2}
   equipP: {fileID: 1333397830098856753, guid: c66b00fe87672ff48b5baea512784644, type: 3}
   spawnPos: {fileID: 5056235566711631867}
-  equipamount: {fileID: 5247602535056416102}
+  equipAmountText: {fileID: 5247602535056416102}
 --- !u!54 &8250491785811091676
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3961,7 +3961,7 @@ MonoBehaviour:
   buildingMaterial: {fileID: 11400000, guid: ab5cda9f98d04c0468dced17568aeb07, type: 2}
   equipP: {fileID: 1333397830098856753, guid: 9530c83321cdd244594df078afb81420, type: 3}
   spawnPos: {fileID: 698353931748903008}
-  equipamount: {fileID: 4621421898563790144}
+  equipAmountText: {fileID: 4621421898563790144}
 --- !u!54 &362883988065676176
 Rigidbody:
   m_ObjectHideFlags: 0

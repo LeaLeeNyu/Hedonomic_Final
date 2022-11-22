@@ -7,11 +7,12 @@ using UnityEngine.Events;
 public class FunctionTimer
 {
     public float timer;
-    private bool isDestoryed = false;
+    public bool isDestoryed = false;
 
-    public FunctionTimer(float timer)
+    public FunctionTimer(float timer,bool isDestoryed)
     {
         this.timer = timer;
+        this.isDestoryed = isDestoryed;
     }
 
     public void UpdateTimer()
@@ -19,7 +20,7 @@ public class FunctionTimer
         if (!isDestoryed)
         {
             timer -= Time.deltaTime;
-            if (timer < 0)
+            if (timer < 0.01f)
             {
                 DestorySelf();
             }
@@ -28,7 +29,7 @@ public class FunctionTimer
 
     private void DestorySelf()
     {
-        isDestoryed = true;
+        isDestoryed = true;       
     }
 
     public void ResetSelf(float timer)

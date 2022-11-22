@@ -6,9 +6,9 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class XRSpawnInteractable : XRSimpleInteractable
 { 
-    protected int equipCount;
+    protected int equipAmount;
     protected int equipCurrentCount = 0;
-    public BuildingMaterialSO buildingMaterial;
+    [SerializeField] private BuildingMaterialSO buildingMaterial;
     [SerializeField] private GameObject equipP;
     [SerializeField] private Transform spawnPos;
 
@@ -16,12 +16,12 @@ public class XRSpawnInteractable : XRSimpleInteractable
     private string rightControllerName = "RightHand";
 
     //Canvas Interface
-    [SerializeField] protected TMP_Text equipamount;
+    [SerializeField] protected TMP_Text equipAmountText;
 
-    private void Start()
+    protected virtual void Start()
     {
-        equipCount = buildingMaterial.amount;
-        equipamount.text = (equipCount - equipCurrentCount).ToString();
+        equipAmount = buildingMaterial.amount;
+        equipAmountText.text = (equipAmount - equipCurrentCount).ToString();
 
         //_interactionManager = GameObject.Find("XR Interaction Manager").GetComponent<XRInteractionManager>();
     }
@@ -34,13 +34,13 @@ public class XRSpawnInteractable : XRSimpleInteractable
 
     private GameObject SpawnObject(GameObject equip)
     {
-        if (equipCurrentCount < equipCount)
+        if (equipCurrentCount < equipAmount)
         {
             GameObject spawnObject = Instantiate(equip, spawnPos.position, equip.transform.rotation);
 
             //change eqip amount
             equipCurrentCount += 1;
-            equipamount.text = (equipCount - equipCurrentCount).ToString();
+            equipAmountText.text = (equipAmount - equipCurrentCount).ToString();
 
             return spawnObject;
         }
