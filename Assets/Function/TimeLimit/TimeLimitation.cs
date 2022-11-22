@@ -39,9 +39,6 @@ public class TimeLimitation : MonoBehaviour
 
     private void Update()
     {
-
-        Debug.Log(timer.isDestoryed);
-
         if (start && !timer.isDestoryed)
         {
             timer.UpdateTimer();
@@ -54,7 +51,15 @@ public class TimeLimitation : MonoBehaviour
 
         //Time counter interface
         if(timeLimitationText != null)
-            timeLimitationText.text = timer.timer.ToString();
+        {
+            float dicimalText = Mathf.Round(timer.timer * 100) / 100;
+
+            if (dicimalText <= 0.01f)
+                dicimalText = 0f;
+
+            timeLimitationText.text = dicimalText.ToString();
+        }
+            
     }
 
     public void StartTime()

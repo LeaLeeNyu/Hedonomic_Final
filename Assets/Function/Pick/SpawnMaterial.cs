@@ -13,7 +13,6 @@ public class SpawnMaterial:MonoBehaviour
 {
 
     //public GameObject Player;
-    public int destroyedCounter;
     public Text displayText;
     private Vector3 velocity;
     public GameObject[] materialList;

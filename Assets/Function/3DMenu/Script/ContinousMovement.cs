@@ -6,7 +6,8 @@ using UnityEngine.XR.Interaction.Toolkit.Inputs;
 
     public class ContinousMovement : MonoBehaviour
 {
-    [SerializeField]private ActionBasedContinuousMoveProvider _continuousMoveProviderLeft;
+    [SerializeField] private ActionBasedContinuousMoveProvider _continuousMoveProviderLeft;
+    [SerializeField] private GameObject continuousMoveProviderLeft;
 
     protected void OnEnable()
     {
@@ -24,12 +25,14 @@ using UnityEngine.XR.Interaction.Toolkit.Inputs;
 
     void WatchTurnOn()
     {
-        _continuousMoveProviderLeft.enabled = false;
+        //_continuousMoveProviderLeft.enabled = false;
+        continuousMoveProviderLeft.SetActive(false);
     }
 
     void WatchTurnOff()
     {
-        _continuousMoveProviderLeft.enabled = true;
+        // _continuousMoveProviderLeft.enabled = true;
+        continuousMoveProviderLeft.SetActive(true);
     }
 
 }
