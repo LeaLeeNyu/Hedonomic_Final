@@ -885,8 +885,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 751ceb8387ed15943aa4f8212e4fc472, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _continuousMoveProviderLeft: {fileID: 5023876550493627459}
-  continuousMoveProviderLeft: {fileID: 5023876550493627469}
+  m_System: {fileID: 0}
+  m_MoveSpeed: 1
+  m_EnableStrafe: 1
+  m_UseGravity: 1
+  m_GravityApplicationMode: 0
+  m_ForwardSource: {fileID: 0}
+  m_LeftHandMoveAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Left Hand Move
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: ea65b81a-68cc-4e14-a074-2e69962ac2c8
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 6972639530819350904, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  m_RightHandMoveAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Right Hand Move
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 79885fec-4870-49c1-86b8-ef60d468dbd5
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -8198699208435500284, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &5023876549532578852
 GameObject:
   m_ObjectHideFlags: 0
@@ -1240,7 +1268,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5023876550080045755
 Transform:
   m_ObjectHideFlags: 0
@@ -1424,7 +1452,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5023876550493627468
 Transform:
   m_ObjectHideFlags: 0
