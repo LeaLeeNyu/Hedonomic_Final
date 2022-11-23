@@ -14,8 +14,8 @@ public class XRDreamSpawnInteractable : XRSpawnInteractable
     {
         if (other.gameObject.tag == "DreamOne" && spawnLeave)
         {
-            equipCount += 1;
-            equipamount.text = (equipCount - equipCurrentCount).ToString();
+            equipAmount += 1;
+            equipAmountText.text = (equipAmount - equipCurrentCount).ToString();
             Destroy(other.gameObject);
             spawnLeave = false;
             dreamCanvasObject.SetActive(true);

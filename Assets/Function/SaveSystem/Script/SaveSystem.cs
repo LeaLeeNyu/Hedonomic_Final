@@ -11,17 +11,20 @@ public class SaveSystem
         BinaryFormatter formatter = new BinaryFormatter();
         string path = Application.persistentDataPath + "/PlayerPosition.game";
         FileStream stream = new FileStream(path, FileMode.Create);
-            
+
+        PlayerPositionData data = new PlayerPositionData(checkPoint);
+        formatter.Serialize(stream, data);
+
         stream.Close();
     }
 
-    public static void SaveBagData(string materialName, int materialAmount)
+    public static void SaveBagData(string[] materialNames, int[] materialAmounts)
     {
         BinaryFormatter formatter = new BinaryFormatter();
         string path = Application.persistentDataPath + "/BagData.game";
         FileStream stream = new FileStream(path, FileMode.Create);
 
-        PlayerBagData data = new PlayerBagData(materialName, materialAmount);
+        PlayerBagData data = new PlayerBagData(materialNames, materialAmounts);
         formatter.Serialize(stream, data);
 
         stream.Close();
@@ -30,12 +33,12 @@ public class SaveSystem
     public static PlayerPositionData LoadPosData()
     {
         string path = Application.persistentDataPath + "/PlayerPosition.game";
+        FileStream stream = new FileStream(path, FileMode.Open);
 
-        if (File.Exists(path))
+        if (File.Exists(path) && stream.Length > 0)
         {
             BinaryFormatter formatter = new BinaryFormatter();
-            FileStream stream = new FileStream(path, FileMode.Open);
-
+           
             PlayerPositionData data = formatter.Deserialize(stream) as PlayerPositionData;
 
             stream.Close();

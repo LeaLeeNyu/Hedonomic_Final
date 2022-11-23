@@ -16,6 +16,7 @@ public class CheckingPoint : MonoBehaviour
         if (other.gameObject.layer == 6)
         {
             SaveSystem.SavePlayerPos(this);
+            Debug.Log("Save Pos Data");
         }
     }
 

@@ -12,7 +12,33 @@ using Random = UnityEngine.Random;
 
 public class EliminationRect : MonoBehaviour
 {
-    private int box, moveUp, moveForward, rotate, stair = 0;
+    public int box, moveUp, moveForward, rotate, stair = 0;
+    private string[] materialNames = new string[5];
+    private int[] materialAmounts = new int[5];
+
+    private void Start()
+    {
+        //Reset the data
+        //SaveSystem.SaveBagData("Box", 0);
+        //SaveSystem.SaveBagData("MoveUp", 0);
+        //SaveSystem.SaveBagData("MoveForward", 0);
+        //SaveSystem.SaveBagData("Rotate", 0);
+        //SaveSystem.SaveBagData("Stair", 0);
+
+        materialNames[0] = "Box";
+        materialNames[1] = "MoveUp";
+        materialNames[2] = "MoveForward";
+        materialNames[3] = "Rotate";
+        materialNames[4] = "Stair";
+
+        for(int i = 0; i < materialAmounts.Length; i++)
+        {
+            materialAmounts[i] = 0;
+        }
+
+        SaveSystem.SaveBagData(materialNames, materialAmounts);
+
+    }
 
     private void OnEnable()
     {
@@ -59,11 +85,21 @@ public class EliminationRect : MonoBehaviour
 
     void SaveData()
     {
-        SaveSystem.SaveBagData("Box", box);
-        SaveSystem.SaveBagData("MoveUp", moveUp);
-        SaveSystem.SaveBagData("MoveForward", moveForward);
-        SaveSystem.SaveBagData("Rotate", rotate);
-        SaveSystem.SaveBagData("Stair", stair);
+        //SaveSystem.SaveBagData("Box", box);
+        //SaveSystem.SaveBagData("MoveUp", moveUp);
+        //SaveSystem.SaveBagData("MoveForward", moveForward);
+        //SaveSystem.SaveBagData("Rotate", rotate);
+        // SaveSystem.SaveBagData("Stair", stair);
+
+        materialAmounts[0] = box;
+        materialAmounts[1] = moveUp;
+        materialAmounts[2] = moveForward;
+        materialAmounts[3] = rotate;
+        materialAmounts[4] = stair;
+
+        SaveSystem.SaveBagData(materialNames, materialAmounts);
+
+        Debug.Log("Save Bag Data");
     }
 
 }

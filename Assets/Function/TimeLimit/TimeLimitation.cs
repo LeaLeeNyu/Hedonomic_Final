@@ -25,7 +25,7 @@ public class TimeLimitation : MonoBehaviour
     public static bool start = false;
 
     //time counter interface
-    [SerializeField] public Text timeCounter;
+    [HideInInspector]public static TMP_Text timeLimitationText;
 
     private void Awake()
     {
@@ -39,18 +39,27 @@ public class TimeLimitation : MonoBehaviour
 
     private void Update()
     {
-        if (start && timer!= null)
+        if (start && !timer.isDestoryed)
         {
             timer.UpdateTimer();
-        }
-        else if(start && timer == null)
+        }else if (start && timer.isDestoryed)
         {
             start = false;
             endTime.Invoke();
+            Debug.Log("End!");
         }
 
         //Time counter interface
-        timeCounter.text = timer.timer.ToString();
+        if(timeLimitationText != null)
+        {
+            float dicimalText = Mathf.Round(timer.timer * 100) / 100;
+
+            if (dicimalText <= 0.01f)
+                dicimalText = 0f;
+
+            timeLimitationText.text = dicimalText.ToString();
+        }
+            
     }
 
     public void StartTime()
