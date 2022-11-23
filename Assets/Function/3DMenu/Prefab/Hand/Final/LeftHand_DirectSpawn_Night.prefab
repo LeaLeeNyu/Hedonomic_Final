@@ -3355,7 +3355,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handType: 0
   inputDeviceCharacteristics: 0
-  leftHandName: LeftHand_DirectSpawn
+  leftHandName: LeftHand_DirectSpawn_Night
   rightHandName: RightHand
   watchCanvas: {fileID: 6741807458406291241}
   equipObjects:
@@ -4111,7 +4111,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2977624350536028589
 RectTransform:
   m_ObjectHideFlags: 0
