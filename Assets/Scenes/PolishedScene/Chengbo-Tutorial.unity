@@ -361,7 +361,11 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 7
+=======
+  m_RootOrder: 13
+>>>>>>> parent of 7367ba16 ([Chengbo]City Add)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &295546070
 MonoBehaviour:
@@ -843,7 +847,11 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 5
+=======
+  m_RootOrder: 12
+>>>>>>> parent of 7367ba16 ([Chengbo]City Add)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1520016986
 PrefabInstance:
@@ -1217,7 +1225,11 @@ Transform:
   - {fileID: 1281078255}
   - {fileID: 19495171}
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 13
+=======
+  m_RootOrder: 9
+>>>>>>> parent of 7367ba16 ([Chengbo]City Add)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2061088442
 GameObject:
@@ -1248,7 +1260,11 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 0
+=======
+  m_RootOrder: 10
+>>>>>>> parent of 7367ba16 ([Chengbo]City Add)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2075376407
 PrefabInstance:
@@ -3239,7 +3255,11 @@ Transform:
   - {fileID: 5023876548866558219}
   - {fileID: 5023876549018587952}
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 2
+=======
+  m_RootOrder: 11
+>>>>>>> parent of 7367ba16 ([Chengbo]City Add)
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!136 &5023876549059529135
 CapsuleCollider:
@@ -4762,7 +4782,11 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 12
+=======
+  m_RootOrder: 8
+>>>>>>> parent of 7367ba16 ([Chengbo]City Add)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8832921638332230969
 MonoBehaviour:
