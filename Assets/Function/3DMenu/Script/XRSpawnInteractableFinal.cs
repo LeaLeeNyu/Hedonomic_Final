@@ -6,6 +6,20 @@ using UnityEngine.UIElements;
 public class XRSpawnInteractableFinal : XRSpawnInteractable
 {
     [SerializeField] private BuildingMaterialType materialType;
+
+    protected override void OnEnable()
+    {
+        base.OnEnable();
+        AncientDreamTrigger.ancientDreamTrigger += SurplusMaterialCounter;
+    }
+
+    protected override void OnDisable()
+    {
+        base.OnDisable();
+        AncientDreamTrigger.ancientDreamTrigger -= SurplusMaterialCounter;
+    }
+
+
     protected override void Start()
     {
         PlayerBagData bagData = SaveSystem.LoadBagData();
@@ -36,5 +50,11 @@ public class XRSpawnInteractableFinal : XRSpawnInteractable
         }
 
         equipAmountText.text = (equipAmount - equipCurrentCount).ToString();
+    }
+
+    //Count surplus material to calculate score
+    void SurplusMaterialCounter()
+    {
+        MissionCompleteMaterialCount.surplusMaterial += equipCurrentCount;
     }
 }
