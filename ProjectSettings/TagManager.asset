@@ -19,6 +19,8 @@ TagManager:
   - DreamOneCanvas
   - Stair
   - AncientDream
+  - ClubDream
+  - HouseDream
   layers:
   - Default
   - TransparentFX

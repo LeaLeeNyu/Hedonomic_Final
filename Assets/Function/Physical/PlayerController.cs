@@ -73,11 +73,26 @@ public class PlayerController : MonoBehaviour
 
         if (other.gameObject.name == "Warp_Sphere")
         {
-            SceneManager.LoadScene("Chengbo-PickUp");
+            SceneManager.LoadScene("Chengbo-PickUp-Final");
         }
+
         if (other.gameObject.name == "Warp_Sphere2")
         {
             SceneManager.LoadScene("Chengbo-Base");
+        }
+
+        //Night scene
+        if (other.gameObject.name == "Ancient_Sphere")
+        {
+            SceneManager.LoadScene("Yuan-Ancient");
+        }
+        if (other.gameObject.name == "House_Sphere")
+        {
+            SceneManager.LoadScene("Chengbo-HorrorMansion");
+        }
+        if (other.gameObject.name == "Club_Sphere")
+        {
+            SceneManager.LoadScene("Chengbo-DanceClub");
         }
 
     }
