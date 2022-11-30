@@ -496,7 +496,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 65.4, y: -77}
+  m_AnchoredPosition: {x: 63.44, y: -74.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &525433005174882212
@@ -527,8 +527,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'This is a mid-level game, and you need to deliver this dream material
-    to this island. '
+  m_text: This is a hardest level. Remember, don't step into the swamp. Now, grab
+    the mmaterial to save this mansion.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 85ce07dbab3a4804b8dd705b45e4f29a, type: 2}
   m_sharedMaterial: {fileID: -6669771091076692064, guid: 85ce07dbab3a4804b8dd705b45e4f29a, type: 2}
@@ -562,7 +562,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -591,7 +591,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -70.06538, y: 0, z: 59.804554, w: 0}
+  m_margin: {x: -75.07189, y: 0, z: 54.174046, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -852,7 +852,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.4, y: -136.2}
+  m_AnchoredPosition: {x: -3.4, y: -140.7}
   m_SizeDelta: {x: 141.3, y: 61.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1992137485086867388
@@ -883,7 +883,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3194c95565e2bc444bb25e036462ee1c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a382a4a3eeb49d9499c5738d8be2592d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1095,7 +1095,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ancient Dream
+  m_text: horror mansion
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2c9718d056071e54b9363f5c0c3aaafb, type: 2}
   m_sharedMaterial: {fileID: -1706327752663183354, guid: 2c9718d056071e54b9363f5c0c3aaafb, type: 2}
@@ -1906,14 +1906,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.5590191, b: 1, a: 0.8627451}
+  m_Color: {r: 0, g: 0.56078434, b: 1, a: 0.8627451}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f5d471191f6b1c448829af3692d251cd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7ae9a6751a8074e4785b44ae5dbb84af, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2100,7 +2100,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cb01a662594788a47b95d07f1885ae3e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 38de5a337d1dbfd43abdbf10acf61891, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2297,7 +2297,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 65.4, y: -132.5}
+  m_AnchoredPosition: {x: 65.4, y: -138}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1249163586375154259
