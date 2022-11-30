@@ -63,6 +63,7 @@ namespace UnityEngine.XR.Interaction.Toolkit
             var leftHandValue = m_LeftHandMoveAction.action?.ReadValue<Vector2>() ?? Vector2.zero;
             var rightHandValue = m_RightHandMoveAction.action?.ReadValue<Vector2>() ?? Vector2.zero;
 
+            //if watch open, left hand value is 0, player cannot move with left controller
             if (XRHandController.watchState)
             {
                 leftHandValue = Vector2.zero;
