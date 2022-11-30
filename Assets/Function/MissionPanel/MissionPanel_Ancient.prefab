@@ -5679,7 +5679,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.4, y: -136.2}
+  m_AnchoredPosition: {x: -3.4, y: -140.8}
   m_SizeDelta: {x: 141.3, y: 61.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4166070163962711790
@@ -5831,7 +5831,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 65.4, y: -77}
+  m_AnchoredPosition: {x: 65.4, y: -72.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4166070164894863451
@@ -5862,8 +5862,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'This is a mid-level game, and you need to deliver this dream material
-    to this island. '
+  m_text: This is a mid-level game, you can see the beauty of the ancient egypt.
+    Grab the material to explore!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 85ce07dbab3a4804b8dd705b45e4f29a, type: 2}
   m_sharedMaterial: {fileID: -6669771091076692064, guid: 85ce07dbab3a4804b8dd705b45e4f29a, type: 2}
@@ -5897,7 +5897,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -11142,7 +11142,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 65.4, y: -132.5}
+  m_AnchoredPosition: {x: 65.4, y: -138}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3495301455211321789
