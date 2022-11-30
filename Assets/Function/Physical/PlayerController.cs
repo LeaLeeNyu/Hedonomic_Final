@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private InputActionReference jumpReference;
     [SerializeField] private float jumpForce = 100f;
     [SerializeField] private GameObject checkGround;
+    [SerializeField] private float yDistance;
 
     private Rigidbody _rigidbody;
 
@@ -58,7 +59,7 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         //if player falling down, they will come back to platform
-        if (transform.position.y <= -5)
+        if (transform.position.y <= yDistance)
         {
             PlayerPositionData positionData = SaveSystem.LoadPosData();
 

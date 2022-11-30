@@ -7,21 +7,10 @@ public class XRSpawnInteractableFinal : XRSpawnInteractable
 {
     [SerializeField] private BuildingMaterialType materialType;
 
-    protected override void OnEnable()
+    protected override void Awake()
     {
-        base.OnEnable();
-        AncientDreamTrigger.ancientDreamTrigger += SurplusMaterialCounter;
-    }
+        base.Awake();
 
-    protected override void OnDisable()
-    {
-        base.OnDisable();
-        AncientDreamTrigger.ancientDreamTrigger -= SurplusMaterialCounter;
-    }
-
-
-    protected override void Start()
-    {
         PlayerBagData bagData = SaveSystem.LoadBagData();
 
         if (materialType == BuildingMaterialType.Box && bagData.buildingMaterial.ContainsKey("Box"))
@@ -52,9 +41,9 @@ public class XRSpawnInteractableFinal : XRSpawnInteractable
         equipAmountText.text = (equipAmount - equipCurrentCount).ToString();
     }
 
-    //Count surplus material to calculate score
-    void SurplusMaterialCounter()
+    protected override void Start()
     {
-        MissionCompleteMaterialCount.surplusMaterial += equipCurrentCount;
+
     }
+
 }

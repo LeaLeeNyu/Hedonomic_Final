@@ -16,6 +16,7 @@ public class MissionCompleteScore : MonoBehaviour
     [SerializeField] private LevelTimeCounter timeScore;
 
     [SerializeField] private GameObject panel;
+    [SerializeField] private GameObject guide;
     [SerializeField] private GameObject zerostar;
     [SerializeField] private GameObject onestar;
     [SerializeField] private GameObject twostar;
@@ -37,8 +38,12 @@ public class MissionCompleteScore : MonoBehaviour
     void DreamIsTriggered()
     {
         panel.SetActive(true);
+        guide.SetActive(false);
 
         int finalScore = materialScore.materialScore + timeScore.score;
+
+        //Debug.Log("Panel " + materialScore.materialScore);
+
         if(finalScore <= 10)
         {
             zerostar.SetActive(true);

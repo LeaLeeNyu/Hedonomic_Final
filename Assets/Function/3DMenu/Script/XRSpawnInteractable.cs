@@ -6,8 +6,8 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class XRSpawnInteractable : XRSimpleInteractable
 { 
-    protected int equipAmount;
-    protected int equipCurrentCount = 0;
+    public int equipAmount;
+    public int equipCurrentCount = 0;
     [SerializeField] private BuildingMaterialSO buildingMaterial;
     [SerializeField] private GameObject equipP;
     [SerializeField] private Transform spawnPos;

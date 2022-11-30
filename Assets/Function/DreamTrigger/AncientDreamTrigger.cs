@@ -7,7 +7,8 @@ using UnityEngine.Events;
 
 public class AncientDreamTrigger : MonoBehaviour
 {    
-    [SerializeField] private GameObject _dreamObject;
+    [SerializeField] private GameObject statueAfter;
+    [SerializeField] private GameObject statueBefore;
     [SerializeField] private string _dreamName;
 
     private bool showDream = false;
@@ -42,7 +43,8 @@ public class AncientDreamTrigger : MonoBehaviour
         if(other.gameObject.tag == _dreamName)
         {
             Destroy(other.gameObject);
-            _dreamObject.SetActive(true);
+            statueAfter.SetActive(true);
+            statueBefore.SetActive(false);
             plateformMesh.SetActive(true);
             showDream = true;
 

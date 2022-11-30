@@ -5,6 +5,7 @@ using TMPro;
 
 public class MissionCompleteMaterialCount : MonoBehaviour
 {
+    public static bool countMaterial = true;
     public static int surplusMaterial;
     public int materialScore;
     [SerializeField] private TMP_Text materialScoreText;
@@ -19,13 +20,10 @@ public class MissionCompleteMaterialCount : MonoBehaviour
         AncientDreamTrigger.ancientDreamTrigger -= MaterialSocre;
     }
 
-    private void Start()
-    {
-        surplusMaterial = 0;
-    }
 
     void MaterialSocre()
     {
+        countMaterial = false;
         materialScore = surplusMaterial * 10;
         materialScoreText.text = "+" + materialScore.ToString();
     }

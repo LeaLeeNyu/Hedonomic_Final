@@ -660,7 +660,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 751ceb8387ed15943aa4f8212e4fc472, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _continuousMoveProviderLeft: {fileID: 1567334696}
+  m_System: {fileID: 0}
+  m_MoveSpeed: 1
+  m_EnableStrafe: 1
+  m_UseGravity: 1
+  m_GravityApplicationMode: 0
+  m_ForwardSource: {fileID: 0}
+  m_LeftHandMoveAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  m_RightHandMoveAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
 --- !u!1 &405844466
 GameObject:
   m_ObjectHideFlags: 0
@@ -764,6 +793,7 @@ MonoBehaviour:
   jumpReference: {fileID: 5001573303941018886, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   jumpForce: 1000
   checkGround: {fileID: 494955369}
+  yDistance: -5
 --- !u!1 &494955369
 GameObject:
   m_ObjectHideFlags: 0

@@ -820,6 +820,8 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
+  equipAmount: 0
+  equipCurrentCount: 0
   buildingMaterial: {fileID: 11400000, guid: bab97f31141f27e43ac6a028dde73964, type: 2}
   equipP: {fileID: 1333397830098856753, guid: 419d7f7ed64c6584f8d6a4d33493d3e7, type: 3}
   spawnPos: {fileID: 4974835909558990276}
@@ -1421,6 +1423,8 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
+  equipAmount: 0
+  equipCurrentCount: 0
   buildingMaterial: {fileID: 11400000, guid: 63d8fb74cc9a3f245857ddc605f30ab4, type: 2}
   equipP: {fileID: 1333397830098856753, guid: 81b81011275bba44a97fc9b4788f0578, type: 3}
   spawnPos: {fileID: 5084163452480327929}
@@ -2234,6 +2238,60 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &3901691849553539977
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6317807068074965885}
+  - component: {fileID: 2649027805545525732}
+  m_Layer: 0
+  m_Name: SurplusMaterial
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6317807068074965885
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3901691849553539977}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2311559517653776224}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2649027805545525732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3901691849553539977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 229caf7334cb88f4c884ff587e54eec0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boxAmount: {fileID: 3601429047003209871}
+  moveUpAmount: {fileID: 5393365444254232907}
+  moveForwardAmount: {fileID: 730675993394197484}
+  rotateAmount: {fileID: 8596216313148926470}
+  stairAmount: {fileID: 7642410105407489965}
 --- !u!1 &3921999357756244709
 GameObject:
   m_ObjectHideFlags: 0
@@ -13283,6 +13341,7 @@ RectTransform:
   - {fileID: 6392574617127844079}
   - {fileID: 8022550773016862739}
   - {fileID: 4985062739493304174}
+  - {fileID: 6317807068074965885}
   m_Father: {fileID: 7971470444953957568}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
@@ -13763,6 +13822,8 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
+  equipAmount: 0
+  equipCurrentCount: 0
   buildingMaterial: {fileID: 11400000, guid: cba982dab7f9fb54ca2cf7e88ba548b1, type: 2}
   equipP: {fileID: 1333397830098856753, guid: 7ec7a3897eb350d4785411adc51bdd8f, type: 3}
   spawnPos: {fileID: 8765757160675811585}
@@ -13997,7 +14058,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1638779924389573679
 Transform:
   m_ObjectHideFlags: 0
@@ -14162,6 +14223,8 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
+  equipAmount: 0
+  equipCurrentCount: 0
   buildingMaterial: {fileID: 11400000, guid: c141d6593c9bc224cbc0400e556f255c, type: 2}
   equipP: {fileID: 4585494135920098850, guid: 0878686bd1e1f5643aeda4590ac881b6, type: 3}
   spawnPos: {fileID: 1759053632393578726}
@@ -14600,6 +14663,8 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
+  equipAmount: 0
+  equipCurrentCount: 0
   buildingMaterial: {fileID: 11400000, guid: d4b471d97a6f602428dff1ddf9136341, type: 2}
   equipP: {fileID: 1333397830098856753, guid: c66b00fe87672ff48b5baea512784644, type: 3}
   spawnPos: {fileID: 5056235566711631867}
@@ -14754,6 +14819,8 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
+  equipAmount: 0
+  equipCurrentCount: 0
   buildingMaterial: {fileID: 11400000, guid: ab5cda9f98d04c0468dced17568aeb07, type: 2}
   equipP: {fileID: 1333397830098856753, guid: 9530c83321cdd244594df078afb81420, type: 3}
   spawnPos: {fileID: 698353931748903008}
