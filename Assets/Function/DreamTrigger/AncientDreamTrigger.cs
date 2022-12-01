@@ -18,7 +18,7 @@ public class AncientDreamTrigger : MonoBehaviour
     [SerializeField] private GameObject plateform;
     [SerializeField] private GameObject plateformMesh;
     //move plateform
-    [SerializeField] private float lerpSpeed;
+    [SerializeField] private float platformLerpSpeed;
     private float plateformMoveLerp;
     [SerializeField] private Vector3 _startPlateform;
     [SerializeField] private Vector3 _endPlateform;
@@ -27,6 +27,7 @@ public class AncientDreamTrigger : MonoBehaviour
     //The city
     [SerializeField] private GameObject dreamBuilding;
     //move city
+    [SerializeField] private float houseLerpSpeed;
     private float cityMoveLerp;
     [SerializeField] private Vector3 _startCity;
     [SerializeField] private Vector3 _endCity;
@@ -59,21 +60,16 @@ public class AncientDreamTrigger : MonoBehaviour
     {
         if (showDream && plateformMoveLerp < 1)
         {
-            plateformMoveLerp += lerpSpeed;
+            plateformMoveLerp += platformLerpSpeed;
             MovePlateform(_startPlateform, _endPlateform, plateformMoveLerp);
         }
 
         if (showDream && cityMoveLerp < 1)
         {
-            cityMoveLerp += lerpSpeed;
+            cityMoveLerp += houseLerpSpeed;
             MoveBuilding(_startCity, _endCity, cityMoveLerp);
         }
 
-        //if (showDream && plateformMoveLerp < 1)
-        //{
-        //    cityMoveLerp += lerpSpeed;
-        //    MovePlateform(_startCity, _endCity, cityMoveLerp, dreamBuilding);
-        //}
     }
 
     public void MovePlateform(Vector3 startPos, Vector3 endPos, float lerp)
