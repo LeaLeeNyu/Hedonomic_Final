@@ -8,20 +8,17 @@ public class MoveMaterial : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.layer == 6)
+        if(other.gameObject.name == "CheckGround")
         {
-            other.transform.SetParent(transform);
-            Debug.Log("player!");
+            other.transform.parent.SetParent(transform);
         }
-
-        Debug.Log(other.gameObject.name);
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.layer == 6)
+        if (other.gameObject.name == "CheckGround")
         {
-            other.transform.SetParent(null) ;
+            other.transform.parent.SetParent(null) ;
         }
     }
 }
