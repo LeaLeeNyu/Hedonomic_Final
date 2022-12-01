@@ -184,9 +184,9 @@ GameObject:
   - component: {fileID: 5157430689881183996}
   - component: {fileID: 5167878900308331484}
   - component: {fileID: 5117909056785295358}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Mesh
-  m_TagString: Untagged
+  m_TagString: Material
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -282,9 +282,9 @@ GameObject:
   - component: {fileID: 5182149632143074860}
   - component: {fileID: 5157251369758482438}
   - component: {fileID: 5165676169348241880}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Bld_Window_05_Glass
-  m_TagString: Untagged
+  m_TagString: Material
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -367,7 +367,7 @@ GameObject:
   - component: {fileID: 715017709030517625}
   m_Layer: 7
   m_Name: OnBoard
-  m_TagString: Untagged
+  m_TagString: Material
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -425,7 +425,7 @@ GameObject:
   - component: {fileID: 8677643026303378465}
   m_Layer: 7
   m_Name: Transform
-  m_TagString: Untagged
+  m_TagString: Material
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

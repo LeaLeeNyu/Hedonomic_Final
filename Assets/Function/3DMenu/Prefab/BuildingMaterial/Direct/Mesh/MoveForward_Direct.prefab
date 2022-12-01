@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 6291663352715531637}
   m_Layer: 7
   m_Name: Mesh
-  m_TagString: Untagged
+  m_TagString: Material
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -217,9 +217,9 @@ GameObject:
   - component: {fileID: 5642817450839437962}
   - component: {fileID: 5650854741852731348}
   - component: {fileID: 4422198912495426242}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Coffin
-  m_TagString: Untagged
+  m_TagString: Material
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -314,9 +314,9 @@ GameObject:
   - component: {fileID: 5632287507469439626}
   - component: {fileID: 5642214661599228236}
   - component: {fileID: 5651075606705905062}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Coffin_Lid
-  m_TagString: Untagged
+  m_TagString: Material
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -399,7 +399,7 @@ GameObject:
   - component: {fileID: 1049962220185077504}
   m_Layer: 7
   m_Name: OnBoard
-  m_TagString: Untagged
+  m_TagString: Material
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -457,7 +457,7 @@ GameObject:
   - component: {fileID: 8677643026303378465}
   m_Layer: 7
   m_Name: Transform
-  m_TagString: Untagged
+  m_TagString: Material
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

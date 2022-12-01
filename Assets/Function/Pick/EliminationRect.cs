@@ -13,17 +13,11 @@ using Random = UnityEngine.Random;
 public class EliminationRect : MonoBehaviour
 {
     public int box, moveUp, moveForward, rotate, stair = 0;
-    private string[] materialNames = new string[5];
-    private int[] materialAmounts = new int[5];
+    private readonly string[] materialNames = new string[5];
+    private readonly int[] materialAmounts = new int[5];
 
     private void Start()
     {
-        //Reset the data
-        //SaveSystem.SaveBagData("Box", 0);
-        //SaveSystem.SaveBagData("MoveUp", 0);
-        //SaveSystem.SaveBagData("MoveForward", 0);
-        //SaveSystem.SaveBagData("Rotate", 0);
-        //SaveSystem.SaveBagData("Stair", 0);
 
         materialNames[0] = "Box";
         materialNames[1] = "MoveUp";
@@ -42,39 +36,39 @@ public class EliminationRect : MonoBehaviour
 
     private void OnEnable()
     {
-        TimeLimitation.endTime += SaveData;
+        TimeLimitation.EndTimeEvent += SaveData;
     }
 
     private void OnDisable()
     {
-        TimeLimitation.endTime -= SaveData;
+        TimeLimitation.EndTimeEvent -= SaveData;
     }
 
-    void OnTriggerEnter(Collider other)
+    protected virtual void OnTriggerEnter(Collider other)
     {
         if (TimeLimitation.start)
         {            
-            if (other.gameObject.tag == "Box")
+            if (other.gameObject.CompareTag("Box"))
             {
                 Destroy(other.gameObject);
                 box += 1;
             }
-            if(other.gameObject.tag == "MoveUp")
+            if (other.gameObject.CompareTag("MoveUp"))
             {
                 Destroy(other.gameObject);
                 moveUp += 1;
             }
-            if(other.gameObject.tag == "MoveForward")
+            if (other.gameObject.CompareTag("MoveForward"))
             {
                 Destroy(other.gameObject);
                 moveForward += 1;
             }
-            if(other.gameObject.tag == "Rotate")
+            if (other.gameObject.CompareTag("Rotate"))
             {
                 Destroy(other.gameObject);
                 rotate += 1;
             }
-            if(other.gameObject.tag == "Stair")
+            if (other.gameObject.CompareTag("Stair"))
             {
                 Destroy(other.gameObject);
                 stair += 1;

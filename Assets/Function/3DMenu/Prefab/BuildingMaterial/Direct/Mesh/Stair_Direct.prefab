@@ -181,9 +181,9 @@ GameObject:
   - component: {fileID: 206008243963684897}
   - component: {fileID: 2683886038665993451}
   - component: {fileID: 4626400475992717690}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rug_Steps
-  m_TagString: Untagged
+  m_TagString: Material
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295

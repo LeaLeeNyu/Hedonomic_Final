@@ -19,7 +19,7 @@ public class WatchPicking : MonoBehaviour
 {
     [SerializeField] private BuildingMaterialType materialType;
     [SerializeField] private TMP_Text materialAmountText;
-    private int materialAmount;
+    public int materialAmount;
 
     private EliminationRect eliminationRact;
 

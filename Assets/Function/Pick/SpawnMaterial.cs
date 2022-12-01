@@ -13,7 +13,6 @@ public class SpawnMaterial:MonoBehaviour
 {
 
     //public GameObject Player;
-    public Text displayText;
     private Vector3 velocity;
     public GameObject[] materialList;
 
@@ -27,14 +26,14 @@ public class SpawnMaterial:MonoBehaviour
 
     private void OnEnable()
     {
-        TimeLimitation.startTime += StartSpawnMaterial;
-        TimeLimitation.endTime += EndSpawnMaterial;
+        TimeLimitation.StartTimeEvent += StartSpawnMaterial;
+        TimeLimitation.EndTimeEvent += EndSpawnMaterial;
     }
 
     private void OnDisable()
     {
-        TimeLimitation.startTime -= StartSpawnMaterial;
-        TimeLimitation.endTime -= EndSpawnMaterial;
+        TimeLimitation.StartTimeEvent -= StartSpawnMaterial;
+        TimeLimitation.EndTimeEvent -= EndSpawnMaterial;
     }
 
 

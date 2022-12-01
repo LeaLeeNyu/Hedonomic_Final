@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: Box
   description: 'A static plane for you to step on. '
-  amount: 10
+  amount: 0

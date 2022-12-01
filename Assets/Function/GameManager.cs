@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -20,9 +21,9 @@ public class GameManager : MonoBehaviour
     }
     #endregion
 
-    void Reload()
+    public void BackToBase()
     {
-
+        SceneManager.LoadScene("Chengbo-Base-2");
     }
 
 }

@@ -10,6 +10,7 @@ public class MoveMaterial : MonoBehaviour
         if(collision.gameObject.layer == 6)
         {
             collision.transform.SetParent(transform);
+            Debug.Log("player!");
         }
     }
 

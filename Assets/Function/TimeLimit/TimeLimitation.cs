@@ -14,9 +14,9 @@ using UnityEngine.UI;
 public class TimeLimitation : MonoBehaviour
 {
     //The event that happen when time start
-    public static event UnityAction startTime = delegate { };
+    public static event UnityAction StartTimeEvent = delegate { };
     //The event that happen when time is up
-    public static event UnityAction endTime = delegate { };
+    public static event UnityAction EndTimeEvent = delegate { };
     
     [SerializeField] private float time;
     private FunctionTimer timer;
@@ -45,7 +45,7 @@ public class TimeLimitation : MonoBehaviour
         }else if (start && timer.isDestoryed)
         {
             start = false;
-            endTime.Invoke();
+            EndTimeEvent.Invoke();
             Debug.Log("End!");
         }
 
@@ -65,7 +65,7 @@ public class TimeLimitation : MonoBehaviour
     public void StartTime()
     {
         start = true;
-        startTime.Invoke();
+        StartTimeEvent.Invoke();
     }
 
 
