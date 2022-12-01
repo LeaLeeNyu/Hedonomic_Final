@@ -22,17 +22,31 @@ public class MissionCompleteScore : MonoBehaviour
     [SerializeField] private GameObject twostar;
     [SerializeField] private GameObject threestar;
 
-    public dreamType dreamtype;
+    public dreamType type;
 
 
     private void OnEnable()
     {
-        AncientDreamTrigger.ancientDreamTrigger += DreamIsTriggered;
+        if (type == dreamType.Ancient)
+        {
+            AncientDreamTrigger.ancientDreamTrigger += DreamIsTriggered;
+        }
+        else if (type == dreamType.Club)
+        {
+            ClubDreamTrigger.clubDreamTrigger += DreamIsTriggered;
+        }
     }
 
     private void OnDisable()
     {
-        AncientDreamTrigger.ancientDreamTrigger -= DreamIsTriggered;
+        if (type == dreamType.Ancient)
+        {
+            AncientDreamTrigger.ancientDreamTrigger -= DreamIsTriggered;
+        }
+        else if (type == dreamType.Club)
+        {
+            ClubDreamTrigger.clubDreamTrigger -= DreamIsTriggered;
+        }
     }
 
     void DreamIsTriggered()

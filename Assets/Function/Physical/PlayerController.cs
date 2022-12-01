@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         //if player falling down, they will come back to platform
-        if (transform.position.y <= yDistance)
+        if (transform.position.y <= yDistance && _rigidbody.velocity.y< 0f)
         {
             PlayerPositionData positionData = SaveSystem.LoadPosData();
 

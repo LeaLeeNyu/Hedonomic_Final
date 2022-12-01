@@ -5,12 +5,36 @@ using UnityEngine;
 public class TransformParentTrigger : MonoBehaviour
 {
     [SerializeField] private Transform parent;
-    private void OnCollisionEnter(Collision collision)
+    [SerializeField] private GameObject XROrigin;
+    [SerializeField] private dreamType type;
+
+    private void OnEnable()
     {
-        //if collision gameobject is xr origin
-        if(collision.gameObject.layer == 6)
+        if (type == dreamType.Ancient)
         {
-            collision.gameObject.transform.parent = parent;
+            AncientDreamTrigger.ancientDreamTrigger += ChangeTransformParent;
         }
+        else if (type == dreamType.Club)
+        {
+            ClubDreamTrigger.clubDreamTrigger += ChangeTransformParent;
+        }
+
+    }
+
+    private void OnDisable()
+    {
+        if (type == dreamType.Ancient)
+        {
+            AncientDreamTrigger.ancientDreamTrigger -= ChangeTransformParent;
+        }
+        else if (type == dreamType.Club)
+        {
+            ClubDreamTrigger.clubDreamTrigger -= ChangeTransformParent;
+        }
+    }
+
+    private void ChangeTransformParent()
+    {
+        XROrigin.transform.parent = parent;
     }
 }
