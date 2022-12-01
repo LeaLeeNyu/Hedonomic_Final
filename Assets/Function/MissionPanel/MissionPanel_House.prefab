@@ -10145,8 +10145,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This is a hardest level. Remember, don't step into the swamp. Now, grab
-    the mmaterial to save this mansion.
+  m_text: "This is the easiest level. \nGrab the mask into your backpack to explore."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 85ce07dbab3a4804b8dd705b45e4f29a, type: 2}
   m_sharedMaterial: {fileID: -6669771091076692064, guid: 85ce07dbab3a4804b8dd705b45e4f29a, type: 2}
@@ -10532,6 +10531,8 @@ MonoBehaviour:
   otherPanelTwo: {fileID: 0}
   otherPanelOneGray: {fileID: 0}
   otherPanelTwoGray: {fileID: 0}
+  dreamOne: {fileID: 0}
+  dreamTwo: {fileID: 0}
 --- !u!64 &6813319732842657076
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10683,7 +10684,7 @@ RectTransform:
   m_GameObject: {fileID: 4527758700250666473}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 7.2}
-  m_LocalScale: {x: 0.589983, y: 0.589983, z: 0.589983}
+  m_LocalScale: {x: 0.5378344, y: 0.5378344, z: 0.5378344}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 6030061024166845933}
@@ -10691,8 +10692,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.4, y: -140.7}
-  m_SizeDelta: {x: 141.3, y: 61.5}
+  m_AnchoredPosition: {x: -3.4, y: -142.6}
+  m_SizeDelta: {x: 141.3, y: 41.05}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1992137485086867388
 CanvasRenderer:
@@ -10722,7 +10723,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a382a4a3eeb49d9499c5738d8be2592d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 54468ad09b0e80946a2964dfe172f42e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11214,7 +11215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 0.026280325, g: 0.122641504, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -11745,7 +11746,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.56078434, b: 1, a: 0.8627451}
+  m_Color: {r: 0.9811321, g: 0.63557607, b: 0.7978188, a: 0.8627451}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -12015,7 +12016,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 65.4, y: -138}
+  m_AnchoredPosition: {x: 65.4, y: -140.1}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1249163586375154259

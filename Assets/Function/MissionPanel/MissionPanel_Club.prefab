@@ -211,17 +211,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 439534624115938466}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.0000000037252894, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0010299684}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6234241606337512577}
-  m_RootOrder: 0
+  m_Father: {fileID: 5487200847608840143}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -19.099998}
+  m_AnchoredPosition: {x: 65.400024, y: -72.599945}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3166911285671374737
@@ -252,8 +252,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This is a beginner level. It has a dance club and multiple buildings. Now,
-    grab the disco ball to save this city.
+  m_text: "This is a hardest level. \nGrab the disco ball into your backpack to explore."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 85ce07dbab3a4804b8dd705b45e4f29a, type: 2}
   m_sharedMaterial: {fileID: -6669771091076692064, guid: 85ce07dbab3a4804b8dd705b45e4f29a, type: 2}
@@ -679,7 +678,7 @@ Transform:
   m_Children:
   - {fileID: 7022136949282411336}
   m_Father: {fileID: 5487200847608840143}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1369441143335773592
 MonoBehaviour:
@@ -848,17 +847,16 @@ RectTransform:
   m_GameObject: {fileID: 2332296522267159670}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 7.2}
-  m_LocalScale: {x: 0.6820169, y: 0.6820169, z: 0.6820169}
+  m_LocalScale: {x: 0.5976241, y: 0.5976241, z: 0.5976241}
   m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 6054990878645930247}
+  m_Children: []
   m_Father: {fileID: 5487200847608840143}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.4, y: -144}
-  m_SizeDelta: {x: 141.3, y: 36.4}
+  m_AnchoredPosition: {x: 1.8, y: -144}
+  m_SizeDelta: {x: 141.3, y: 61.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3266863765264960969
 CanvasRenderer:
@@ -888,7 +886,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 54468ad09b0e80946a2964dfe172f42e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a382a4a3eeb49d9499c5738d8be2592d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1229,6 +1227,8 @@ MonoBehaviour:
   otherPanelTwo: {fileID: 0}
   otherPanelOneGray: {fileID: 0}
   otherPanelTwoGray: {fileID: 0}
+  dreamOne: {fileID: 0}
+  dreamTwo: {fileID: 0}
 --- !u!1 &3230713271723539058
 GameObject:
   m_ObjectHideFlags: 0
@@ -6366,16 +6366,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5043593174648393047}
   m_LocalRotation: {x: -0, y: -0, z: 0.0000000037252894, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10.558369}
-  m_LocalScale: {x: 1.4662395, y: 1.4662395, z: 1.4662395}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0010299684}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 5827841643140545301}
-  m_RootOrder: 0
+  m_Father: {fileID: 5487200847608840143}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 100.87727, y: 8.797455}
+  m_AnchoredPosition: {x: 65.399994, y: -138}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2389712545199500705
@@ -6829,7 +6829,9 @@ RectTransform:
   - {fileID: 7548778923026611567}
   - {fileID: 1016429381257876153}
   - {fileID: 8010111741903202857}
+  - {fileID: 8361321528951023004}
   - {fileID: 6234241606337512577}
+  - {fileID: 6054990878645930247}
   - {fileID: 5827841643140545301}
   - {fileID: 467909960699101727}
   m_Father: {fileID: 2226144000148452130}
@@ -6961,10 +6963,9 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: -0.0009860243}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 8361321528951023004}
+  m_Children: []
   m_Father: {fileID: 5487200847608840143}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11906,14 +11907,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.56078434, b: 1, a: 0.8627451}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7ae9a6751a8074e4785b44ae5dbb84af, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7d1cc36291a6de34a9924d434c45f936, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1

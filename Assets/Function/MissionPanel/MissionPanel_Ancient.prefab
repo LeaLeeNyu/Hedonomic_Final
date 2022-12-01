@@ -952,8 +952,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This is a mid-level game, you can see the beauty of the ancient egypt.
-    Grab the material to explore!
+  m_text: 'This is a mid-level game.
+
+    Grab the crown into your backpack to explore!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 85ce07dbab3a4804b8dd705b45e4f29a, type: 2}
   m_sharedMaterial: {fileID: -6669771091076692064, guid: 85ce07dbab3a4804b8dd705b45e4f29a, type: 2}
@@ -11718,6 +11719,8 @@ MonoBehaviour:
   otherPanelTwo: {fileID: 0}
   otherPanelOneGray: {fileID: 0}
   otherPanelTwoGray: {fileID: 0}
+  dreamOne: {fileID: 0}
+  dreamTwo: {fileID: 0}
 --- !u!64 &1790122424835789678
 MeshCollider:
   m_ObjectHideFlags: 0
