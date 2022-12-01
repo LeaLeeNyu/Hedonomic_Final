@@ -763,7 +763,7 @@ MonoBehaviour:
   equipAmount: 0
   equipCurrentCount: 0
   buildingMaterial: {fileID: 11400000, guid: cba982dab7f9fb54ca2cf7e88ba548b1, type: 2}
-  equipP: {fileID: 1333397830098856753, guid: 1fd574b1f08dda247b1caef6f46f1564, type: 3}
+  equipP: {fileID: 1333397830098856753, guid: 419d7f7ed64c6584f8d6a4d33493d3e7, type: 3}
   spawnPos: {fileID: 4974835909558990276}
   equipAmountText: {fileID: 7890017707845710704}
   watchPicking: {fileID: 7182582778513961502}

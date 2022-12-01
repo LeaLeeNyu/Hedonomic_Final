@@ -42,9 +42,9 @@ public class XRSpawnInteractable : XRSimpleInteractable
             equipCurrentCount += 1;
             equipAmountText.text = (equipAmount - equipCurrentCount).ToString();
             //Debug
-            Debug.Log("Spawn a material");
-            Debug.Log(equipAmount);
-            Debug.Log(equipCurrentCount);
+            //Debug.Log("Spawn a material");
+            //Debug.Log(equipAmount);
+            //Debug.Log(equipCurrentCount);
 
             return spawnObject;
         }

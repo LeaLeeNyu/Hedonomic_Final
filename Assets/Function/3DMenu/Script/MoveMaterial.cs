@@ -5,20 +5,23 @@ using UnityEngine;
 public class MoveMaterial : MonoBehaviour
 {
     [SerializeField] private Transform plateformT;
-    private void OnCollisionEnter(Collision collision)
+
+    private void OnTriggerEnter(Collider other)
     {
-        if(collision.gameObject.layer == 6)
+        if(other.gameObject.layer == 6)
         {
-            collision.transform.SetParent(transform);
+            other.transform.SetParent(transform);
             Debug.Log("player!");
         }
+
+        Debug.Log(other.gameObject.name);
     }
 
-    private void OnCollisionExit(Collision collision)
+    private void OnTriggerExit(Collider other)
     {
-        if (collision.gameObject.layer == 6)
+        if (other.gameObject.layer == 6)
         {
-            collision.transform.SetParent(null) ;
+            other.transform.SetParent(null) ;
         }
     }
 }

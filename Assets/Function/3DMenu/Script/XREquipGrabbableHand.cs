@@ -11,6 +11,7 @@ public class XREquipGrabbableHand : XRGrabInteractable
     [SerializeField] private float handScale = 1f;
 
     private string rightControllerName = "RightHand";
+    private string leftControllerName = "Hand";
 
     [SerializeField]private Collider objectCollider;
 
@@ -31,7 +32,7 @@ public class XREquipGrabbableHand : XRGrabInteractable
             if(hasbeenSelect)
                 MatchAttachPoint(controllerInteractor);
 
-            if (controller.tag == rightControllerName)
+            if (controller.tag == rightControllerName || controller.tag == leftControllerName)
             {
                 //if select by hand, change the scale
                 gameObject.transform.localScale = new Vector3(handScale * gameObject.transform.localScale.x,
@@ -62,7 +63,7 @@ public class XREquipGrabbableHand : XRGrabInteractable
         {
             var controller = controllerInteractor.xrController;
 
-            if (controller.tag == rightControllerName)
+            if (controller.tag == rightControllerName || controller.tag == leftControllerName)
             {
                 gameObject.transform.localScale = new Vector3( gameObject.transform.localScale.x / handScale,
                                                                gameObject.transform.localScale.y / handScale,
