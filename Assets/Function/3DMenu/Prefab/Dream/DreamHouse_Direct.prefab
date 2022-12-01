@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1333397830098856762}
   - component: {fileID: 1333397830098856758}
   - component: {fileID: 4997036278229044483}
-  - component: {fileID: 7267379562363341823}
   m_Layer: 7
   m_Name: DreamHouse_Direct
   m_TagString: HouseDream
@@ -65,7 +64,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
-  m_Colliders: []
+  m_Colliders:
+  - {fileID: 2432194607343455022}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -168,21 +168,8 @@ MonoBehaviour:
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
   handScale: 1
-  objectCollider: {fileID: 0}
+  objectCollider: {fileID: 2432194607343455022}
   dreamOne: {fileID: 11400000, guid: 63d8fb74cc9a3f245857ddc605f30ab4, type: 2}
---- !u!135 &7267379562363341823
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1333397830098856753}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.6
-  m_Center: {x: 0, y: 0.7, z: 0}
 --- !u!1 &6601477893662598938
 GameObject:
   m_ObjectHideFlags: 0
@@ -9922,10 +9909,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mask
       objectReference: {fileID: 0}
+    - target: {fileID: 512842773300474330, guid: 3748cb0dfda24fc499fb4777176da4f8, type: 3}
+      propertyPath: m_TagString
+      value: HouseDream
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3748cb0dfda24fc499fb4777176da4f8, type: 3}
 --- !u!4 &2393589603355280614 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 507081090106896646, guid: 3748cb0dfda24fc499fb4777176da4f8, type: 3}
+  m_PrefabInstance: {fileID: 2755708876332266976}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2432194607343455022 stripped
+MeshCollider:
+  m_CorrespondingSourceObject: {fileID: 576138065194467022, guid: 3748cb0dfda24fc499fb4777176da4f8, type: 3}
   m_PrefabInstance: {fileID: 2755708876332266976}
   m_PrefabAsset: {fileID: 0}

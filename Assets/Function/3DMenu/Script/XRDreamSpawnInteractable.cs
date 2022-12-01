@@ -9,10 +9,11 @@ public class XRDreamSpawnInteractable : XRSpawnInteractable
     private bool spawnLeave = false;
 
     [SerializeField] private GameObject dreamCanvasObject;
+    [SerializeField] private string dreamName;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "DreamOne" && spawnLeave)
+        if (other.gameObject.tag == dreamName && spawnLeave)
         {
             equipAmount += 1;
             equipAmountText.text = (equipAmount - equipCurrentCount).ToString();
@@ -24,7 +25,7 @@ public class XRDreamSpawnInteractable : XRSpawnInteractable
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "DreamOne")
+        if (other.gameObject.tag == dreamName)
         {
             spawnLeave = true;
             dreamCanvasObject.SetActive(false);

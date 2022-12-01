@@ -38,6 +38,10 @@ public class MissionCompleteMaterialCount : MonoBehaviour
         {
             ClubDreamTrigger.clubDreamTrigger += CountScore;
         }
+        else if(type == dreamType.House)
+        {
+            HouseDreamTrigger.houseDreamTrigger += CountScore;
+        }
     }
 
     private void OnDisable()
@@ -49,6 +53,10 @@ public class MissionCompleteMaterialCount : MonoBehaviour
         else if (type == dreamType.Club)
         {
             ClubDreamTrigger.clubDreamTrigger -= CountScore;
+        }
+        else if (type == dreamType.House)
+        {
+            HouseDreamTrigger.houseDreamTrigger -= CountScore;
         }
     }
 

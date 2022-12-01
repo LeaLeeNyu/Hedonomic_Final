@@ -1365,10 +1365,11 @@ MonoBehaviour:
   equipAmount: 0
   equipCurrentCount: 0
   buildingMaterial: {fileID: 11400000, guid: 63d8fb74cc9a3f245857ddc605f30ab4, type: 2}
-  equipP: {fileID: 1333397830098856753, guid: 7d08b3235c98e7747a558ba20b6c92bd, type: 3}
+  equipP: {fileID: 1333397830098856753, guid: 0aec64f2c588ee543ba68d63f8205b40, type: 3}
   spawnPos: {fileID: 5084163452480327929}
   equipAmountText: {fileID: 7559614676869357693}
   dreamCanvasObject: {fileID: 4084132779512962291}
+  dreamName: HouseDream
 --- !u!1 &1936248657220095094
 GameObject:
   m_ObjectHideFlags: 0

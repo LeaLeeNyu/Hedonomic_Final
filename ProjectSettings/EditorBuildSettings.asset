@@ -6,14 +6,29 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/PolishedScene/Chengbo-Base.unity
+    path: Assets/Scenes/PolishedScene/FinalScene/Chengbo-Base.unity
     guid: 9169aeaec4c4d1b48951dbbba34a7239
   - enabled: 1
     path: Assets/Scenes/PolishedScene/Chengbo-PickUp.unity
     guid: 8fbc165d579552144af32511c7e676e7
   - enabled: 1
-    path: Assets/Scenes/PolishedScene/Chengbo-Base-Night.unity
+    path: Assets/Scenes/PolishedScene/FinalScene/Chengbo-Base-Night.unity
     guid: 6a9b7f1c07f09b846adfd91f8a8e6d86
+  - enabled: 1
+    path: Assets/Scenes/PolishedScene/FinalScene/Chengbo-DanceClub.unity
+    guid: a2d48b277d794f14591222167bcb6102
+  - enabled: 1
+    path: Assets/Scenes/PolishedScene/FinalScene/Chengbo-HorrorMansion.unity
+    guid: 3d2915268640f6d489aa0435f91ad206
+  - enabled: 1
+    path: Assets/Scenes/PolishedScene/FinalScene/Chengbo-PickUp-Final.unity
+    guid: 892ad8591522c724fb5a8be4688e4a08
+  - enabled: 1
+    path: Assets/Scenes/PolishedScene/FinalScene/Chengbo-Tutorial.unity
+    guid: e5a00226cafdb15438ee56d7fd4ade2d
+  - enabled: 1
+    path: Assets/Scenes/PolishedScene/FinalScene/Yuan-Ancient.unity
+    guid: e237c85561052bd48a0030642538926e
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 56028036ca5953e4b979e09a85df2a5f, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 1b74b8768049a064cbb6da5ed1b778b4, type: 2}
