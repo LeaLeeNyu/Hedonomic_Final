@@ -675,6 +675,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   materialType: 3
   materialAmountText: {fileID: 7890017707845710704}
+  materialAmount: 0
 --- !u!95 &3998781843533255552
 Animator:
   serializedVersion: 4
@@ -3164,6 +3165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   materialType: 0
   materialAmountText: {fileID: 1737314184006154027}
+  materialAmount: 0
 --- !u!1 &7098302624965208613
 GameObject:
   m_ObjectHideFlags: 0
@@ -3492,6 +3494,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   materialType: 1
   materialAmountText: {fileID: 6248813132378928227}
+  materialAmount: 0
 --- !u!1 &7427841999890501588
 GameObject:
   m_ObjectHideFlags: 0
@@ -3764,6 +3767,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   materialType: 2
   materialAmountText: {fileID: 5247602535056416102}
+  materialAmount: 0
 --- !u!1 &8015201921364320120
 GameObject:
   m_ObjectHideFlags: 0
@@ -3847,6 +3851,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   materialType: 4
   materialAmountText: {fileID: 4621421898563790144}
+  materialAmount: 0
 --- !u!1 &8308329847312821018
 GameObject:
   m_ObjectHideFlags: 0

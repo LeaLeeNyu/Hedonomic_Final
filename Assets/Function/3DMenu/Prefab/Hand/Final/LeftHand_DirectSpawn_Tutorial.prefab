@@ -601,9 +601,9 @@ GameObject:
   - component: {fileID: 4974835909558990276}
   - component: {fileID: 6934971362809253147}
   - component: {fileID: 1595516353531840033}
-  - component: {fileID: 1646020689732069352}
   - component: {fileID: 3998781843533255552}
-  - component: {fileID: 2620503278939498831}
+  - component: {fileID: 4275043651089679034}
+  - component: {fileID: 7182582778513961502}
   m_Layer: 0
   m_Name: SpawnInteractable
   m_TagString: Untagged
@@ -662,21 +662,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &1646020689732069352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1054247937563169998}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b495a623f6a159f498ef5da777920481, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  materialType: 3
-  materialAmountText: {fileID: 7890017707845710704}
-  materialAmount: 0
 --- !u!95 &3998781843533255552
 Animator:
   serializedVersion: 4
@@ -697,7 +682,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2620503278939498831
+--- !u!114 &4275043651089679034
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -781,7 +766,22 @@ MonoBehaviour:
   equipP: {fileID: 1333397830098856753, guid: 1fd574b1f08dda247b1caef6f46f1564, type: 3}
   spawnPos: {fileID: 4974835909558990276}
   equipAmountText: {fileID: 7890017707845710704}
-  watchPicking: {fileID: 1646020689732069352}
+  watchPicking: {fileID: 7182582778513961502}
+--- !u!114 &7182582778513961502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054247937563169998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4018777bcd414194089bff2d83185de5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materialType: 3
+  materialAmountText: {fileID: 7890017707845710704}
+  materialAmount: 0
 --- !u!1 &1106249538084181253
 GameObject:
   m_ObjectHideFlags: 0
@@ -3178,7 +3178,8 @@ GameObject:
   - component: {fileID: 8765757160675811585}
   - component: {fileID: 7094907299121460188}
   - component: {fileID: 4163043458582295948}
-  - component: {fileID: 5305195085799732374}
+  - component: {fileID: 1461450405331928348}
+  - component: {fileID: 7105666782266737591}
   m_Layer: 0
   m_Name: SpawnInteractable
   m_TagString: Untagged
@@ -3236,7 +3237,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &5305195085799732374
+--- !u!114 &1461450405331928348
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3245,7 +3246,92 @@ MonoBehaviour:
   m_GameObject: {fileID: 7058655514842148019}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b495a623f6a159f498ef5da777920481, type: 3}
+  m_Script: {fileID: 11500000, guid: 73e52d4b8ff9fd24995e2a774d02f200, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 0}
+  m_Colliders: []
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_SelectMode: 0
+  m_CustomReticle: {fileID: 0}
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+  equipAmount: 0
+  equipCurrentCount: 0
+  buildingMaterial: {fileID: 11400000, guid: cba982dab7f9fb54ca2cf7e88ba548b1, type: 2}
+  equipP: {fileID: 1333397830098856753, guid: 40af202ec695f8443a0f89911447f76c, type: 3}
+  spawnPos: {fileID: 8765757160675811585}
+  equipAmountText: {fileID: 1737314184006154027}
+  watchPicking: {fileID: 7105666782266737591}
+--- !u!114 &7105666782266737591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7058655514842148019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4018777bcd414194089bff2d83185de5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   materialType: 0
@@ -3507,8 +3593,8 @@ GameObject:
   - component: {fileID: 1759053632393578726}
   - component: {fileID: 2975698953486972123}
   - component: {fileID: 6435320810898341308}
-  - component: {fileID: 4496095231819014010}
-  - component: {fileID: 8126627703783319434}
+  - component: {fileID: 1435997917862779054}
+  - component: {fileID: 6557847895093382163}
   m_Layer: 0
   m_Name: SpawnInteractable
   m_TagString: Untagged
@@ -3566,22 +3652,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &4496095231819014010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7424086172302920623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b495a623f6a159f498ef5da777920481, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  materialType: 1
-  materialAmountText: {fileID: 6248813132378928227}
-  materialAmount: 0
---- !u!114 &8126627703783319434
+--- !u!114 &1435997917862779054
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3665,7 +3736,22 @@ MonoBehaviour:
   equipP: {fileID: 4585494135920098850, guid: 148d0f715cc790943b346b87f99d281f, type: 3}
   spawnPos: {fileID: 1759053632393578726}
   equipAmountText: {fileID: 6248813132378928227}
-  watchPicking: {fileID: 4496095231819014010}
+  watchPicking: {fileID: 6557847895093382163}
+--- !u!114 &6557847895093382163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7424086172302920623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4018777bcd414194089bff2d83185de5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materialType: 1
+  materialAmountText: {fileID: 6248813132378928227}
+  materialAmount: 0
 --- !u!1 &7427841999890501588
 GameObject:
   m_ObjectHideFlags: 0
@@ -3846,8 +3932,8 @@ GameObject:
   - component: {fileID: 5415554876908721853}
   - component: {fileID: 8250491785811091676}
   - component: {fileID: 6010124062465355726}
-  - component: {fileID: 5259634099661303482}
-  - component: {fileID: 3113048279605615467}
+  - component: {fileID: 1029150512026522612}
+  - component: {fileID: 8224534278802613895}
   m_Layer: 0
   m_Name: SpawnInteractable
   m_TagString: Untagged
@@ -3925,22 +4011,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &5259634099661303482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7803096886570446235}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b495a623f6a159f498ef5da777920481, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  materialType: 2
-  materialAmountText: {fileID: 5247602535056416102}
-  materialAmount: 0
---- !u!114 &3113048279605615467
+--- !u!114 &1029150512026522612
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4024,7 +4095,22 @@ MonoBehaviour:
   equipP: {fileID: 1333397830098856753, guid: 825a6551b0d7f26408f7b70954304009, type: 3}
   spawnPos: {fileID: 5056235566711631867}
   equipAmountText: {fileID: 5247602535056416102}
-  watchPicking: {fileID: 5259634099661303482}
+  watchPicking: {fileID: 8224534278802613895}
+--- !u!114 &8224534278802613895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7803096886570446235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4018777bcd414194089bff2d83185de5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materialType: 2
+  materialAmountText: {fileID: 5247602535056416102}
+  materialAmount: 0
 --- !u!1 &8015201921364320120
 GameObject:
   m_ObjectHideFlags: 0
@@ -4036,8 +4122,8 @@ GameObject:
   - component: {fileID: 698353931748903008}
   - component: {fileID: 6868064907545430312}
   - component: {fileID: 362883988065676176}
-  - component: {fileID: 5275089388466193707}
-  - component: {fileID: 8099439530737281284}
+  - component: {fileID: 2185434490806273371}
+  - component: {fileID: 2397962771609277681}
   m_Layer: 0
   m_Name: SpawnInteractable
   m_TagString: Untagged
@@ -4095,22 +4181,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &5275089388466193707
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8015201921364320120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b495a623f6a159f498ef5da777920481, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  materialType: 4
-  materialAmountText: {fileID: 4621421898563790144}
-  materialAmount: 0
---- !u!114 &8099439530737281284
+--- !u!114 &2185434490806273371
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4194,7 +4265,22 @@ MonoBehaviour:
   equipP: {fileID: 1333397830098856753, guid: 91c502a8298d18d4f91936504e093d19, type: 3}
   spawnPos: {fileID: 698353931748903008}
   equipAmountText: {fileID: 4621421898563790144}
-  watchPicking: {fileID: 5275089388466193707}
+  watchPicking: {fileID: 2397962771609277681}
+--- !u!114 &2397962771609277681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8015201921364320120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4018777bcd414194089bff2d83185de5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materialType: 4
+  materialAmountText: {fileID: 4621421898563790144}
+  materialAmount: 0
 --- !u!1 &8335516019934946515
 GameObject:
   m_ObjectHideFlags: 0

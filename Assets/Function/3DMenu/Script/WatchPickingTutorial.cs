@@ -1,34 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
-using UnityEngine.XR.Interaction.Toolkit;
-using Unity.VisualScripting;
 
-
-public enum BuildingMaterialType
+public class WatchPickingTutorial : WatchPicking
 {
-    Box,
-    Rotate,
-    MoveUp,
-    MoveForward,
-    Stair,
-}
 
-public class WatchPicking : MonoBehaviour
-{
-    [SerializeField] protected BuildingMaterialType materialType;
-    [SerializeField] private TMP_Text materialAmountText;
-    public int materialAmount;
-
-    protected EliminationRect eliminationRact;
-
-    private void Start()
-    {
-        eliminationRact = GameObject.Find("Bag").GetComponent<EliminationRect>();
-    }
-
-    protected virtual void Update()
+    protected override void Update()
     {
         if (materialType == BuildingMaterialType.Box)
         {
@@ -50,8 +27,5 @@ public class WatchPicking : MonoBehaviour
         {
             materialAmount = eliminationRact.stair;
         }
-
-        materialAmountText.text = materialAmount.ToString();
     }
-
 }

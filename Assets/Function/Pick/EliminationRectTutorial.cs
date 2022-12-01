@@ -9,6 +9,11 @@ using Random = UnityEngine.Random;
 
 public class EliminationRectTutorial : EliminationRect
 {
+    protected override void Start()
+    {
+        //Dont save material data for tutorial 
+    }
+
     protected override void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Box"))

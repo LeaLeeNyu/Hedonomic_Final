@@ -16,7 +16,7 @@ public class EliminationRect : MonoBehaviour
     private readonly string[] materialNames = new string[5];
     private readonly int[] materialAmounts = new int[5];
 
-    private void Start()
+    protected virtual void Start()
     {
 
         materialNames[0] = "Box";

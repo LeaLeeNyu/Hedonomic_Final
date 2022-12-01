@@ -43,11 +43,11 @@ GameObject:
   - component: {fileID: 4778353950731004132}
   m_Layer: 0
   m_Name: GameObject
-  m_TagString: Hand
+  m_TagString: RightHand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6278650493961773953
 Transform:
   m_ObjectHideFlags: 0

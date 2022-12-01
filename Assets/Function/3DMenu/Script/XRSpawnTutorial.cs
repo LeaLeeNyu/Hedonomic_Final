@@ -9,5 +9,6 @@ public class XRSpawnTutorial : XRSpawnInteractable
     private void Update()
     {
         equipAmount = watchPicking.materialAmount;
+        equipAmountText.text = (equipAmount - equipCurrentCount).ToString();
     }
 }
