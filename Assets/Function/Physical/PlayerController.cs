@@ -96,6 +96,12 @@ public class PlayerController : MonoBehaviour
             SceneManager.LoadScene("Chengbo-DanceClub");
         }
 
+        //pickup to night
+        if (other.gameObject.name == "Warp_Sphere_Night")
+        {
+            SceneManager.LoadScene("Chengbo-Base-Night");
+        }
+
     }
 
 }

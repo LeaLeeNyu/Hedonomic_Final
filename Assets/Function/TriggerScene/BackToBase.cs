@@ -23,7 +23,7 @@ public class BackToBase : MonoBehaviour
 
         if (other.gameObject.name == "LeftHand Direct" || other.gameObject.name == "RightHand Direct")
         {
-            SceneManager.LoadScene("Chengbo-Base-2");
+            SceneManager.LoadScene("Chengbo-Base-3");
             //SceneManager.LoadScene("Chengbo-PickUp-Final");
 
         }

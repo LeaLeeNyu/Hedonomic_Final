@@ -68,8 +68,8 @@ public class XREquipGrabbableHand : XRGrabInteractable
                 gameObject.transform.localScale = new Vector3( gameObject.transform.localScale.x / handScale,
                                                                gameObject.transform.localScale.y / handScale,
                                                                gameObject.transform.localScale.z / handScale);
-
-                objectCollider.isTrigger = false;
+                if(objectCollider!= null)
+                    objectCollider.isTrigger = false;
             }
         }
 
