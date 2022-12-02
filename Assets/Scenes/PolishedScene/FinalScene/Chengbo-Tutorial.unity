@@ -2459,6 +2459,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5023876549512167345, guid: 231ee9ad56943e347b6432f3860c00e8, type: 3}
+      propertyPath: m_MoveSpeed
+      value: 1.25
+      objectReference: {fileID: 0}
     - target: {fileID: 5023876550104053856, guid: 231ee9ad56943e347b6432f3860c00e8, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -2472,8 +2476,12 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5023876550104053856, guid: 231ee9ad56943e347b6432f3860c00e8, type: 3}
-      propertyPath: m_RightHandSnapTurnAction.m_UseReference
+      propertyPath: m_LeftHandSnapTurnAction.m_UseReference
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5023876550104053856, guid: 231ee9ad56943e347b6432f3860c00e8, type: 3}
+      propertyPath: m_RightHandSnapTurnAction.m_UseReference
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 231ee9ad56943e347b6432f3860c00e8, type: 3}
