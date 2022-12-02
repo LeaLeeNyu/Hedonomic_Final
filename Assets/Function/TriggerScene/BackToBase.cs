@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 using System;
 using Random = UnityEngine.Random;
 
-public class TutorialToBase : MonoBehaviour
+public class BackToBase : MonoBehaviour
 {
     void Start()
     {
@@ -23,7 +23,7 @@ public class TutorialToBase : MonoBehaviour
 
         if (other.gameObject.name == "LeftHand Direct" || other.gameObject.name == "RightHand Direct")
         {
-            SceneManager.LoadScene("Chengbo-Base-1");
+            SceneManager.LoadScene("Chengbo-Base-2");
             //SceneManager.LoadScene("Chengbo-PickUp-Final");
 
         }
