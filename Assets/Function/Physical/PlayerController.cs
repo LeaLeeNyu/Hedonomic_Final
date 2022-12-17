@@ -104,4 +104,19 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    public void LoadLevels(string levelName)
+    {
+        StartCoroutine(LoadAsyn(levelName));
+    }
+
+    IEnumerator LoadAsyn(string levelName)
+    {       
+        AsyncOperation operation = SceneManager.LoadSceneAsync(levelName);
+
+        while (!operation.isDone)
+        {
+            float progress = Mathf.Clamp01(operation.progress/ 0.9f);
+            yield return null;
+        }
+    }
 }
