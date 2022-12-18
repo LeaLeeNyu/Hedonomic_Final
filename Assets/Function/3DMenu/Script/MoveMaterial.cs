@@ -5,12 +5,18 @@ using UnityEngine;
 public class MoveMaterial : MonoBehaviour
 {
     [SerializeField] private Transform plateformT;
+    private GameObject[] XROrigin;
+
+    private void Awake()
+    {
+        XROrigin = GameObject.FindGameObjectsWithTag("XROrigin");
+    }
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.name == "CheckGround")
         {
-            other.transform.parent.SetParent(transform);
+            XROrigin[0].transform.SetParent(transform);
         }
     }
 
@@ -18,7 +24,8 @@ public class MoveMaterial : MonoBehaviour
     {
         if (other.gameObject.name == "CheckGround")
         {
-            other.transform.parent.SetParent(null) ;
+            //other.transform.parent.parent.SetParent(null) ;
+            XROrigin[0].transform.SetParent(null);
         }
     }
 }

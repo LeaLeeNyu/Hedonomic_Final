@@ -13794,7 +13794,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handType: 0
   inputDeviceCharacteristics: 0
-  leftHandName: LeftHand_DirectSpawn_Building_Ancient
+  leftHandName: LeftHand_DirectSpawn_Building_Club
   rightHandName: RightHand
   watchCanvas: {fileID: 6741807458406291241}
   equipObjects:

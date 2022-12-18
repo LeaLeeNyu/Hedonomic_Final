@@ -7,7 +7,7 @@ public class TriggerToTutorial : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Hand")
+        if(other.tag == "Hand" || other.tag == "RightHand")
         {
             SceneManager.LoadScene("Chengbo-Tutorial");
         }

@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
                 onGround = true;
             }
         }
-        return onGround;
+        return onGround;       
     }
 
     private void Start()
@@ -51,6 +51,7 @@ public class PlayerController : MonoBehaviour
     void OnJump(InputAction.CallbackContext context)
     {
         bool canJump = isGrounded();
+        Debug.Log(canJump);
         //Debug.Log(canJump);
         if (canJump)
             _rigidbody.AddForce(Vector3.up * jumpForce);

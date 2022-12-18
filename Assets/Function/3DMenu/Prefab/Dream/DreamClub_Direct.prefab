@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1333397830098856762}
   - component: {fileID: 1333397830098856758}
   - component: {fileID: 4997036278229044483}
-  - component: {fileID: 7267379562363341823}
   m_Layer: 7
   m_Name: DreamClub_Direct
   m_TagString: ClubDream
@@ -28,8 +27,8 @@ Transform:
   m_GameObject: {fileID: 1333397830098856753}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8677643026303378465}
   - {fileID: 6595549398648404494}
@@ -168,21 +167,8 @@ MonoBehaviour:
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
   handScale: 1
-  objectCollider: {fileID: 7267379562363341823}
+  objectCollider: {fileID: 5210734985804223441}
   dreamOne: {fileID: 11400000, guid: 63d8fb74cc9a3f245857ddc605f30ab4, type: 2}
---- !u!135 &7267379562363341823
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1333397830098856753}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.6
-  m_Center: {x: 0, y: 0.65, z: 0}
 --- !u!1 &6601477893662598938
 GameObject:
   m_ObjectHideFlags: 0
@@ -9844,7 +9830,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9106266753349247152}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.096, y: 0.006, z: 0}
+  m_LocalPosition: {x: -0.611, y: 0.685, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9906,10 +9892,23 @@ PrefabInstance:
       propertyPath: m_Name
       value: Disco_Ball
       objectReference: {fileID: 0}
+    - target: {fileID: 2304703304423067106, guid: 63098a0bdc0f83649b983b89f838da2f, type: 3}
+      propertyPath: m_TagString
+      value: ClubDream
+      objectReference: {fileID: 0}
+    - target: {fileID: 6482826077304603794, guid: 63098a0bdc0f83649b983b89f838da2f, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63098a0bdc0f83649b983b89f838da2f, type: 3}
 --- !u!4 &366907003203797019 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1490730910205482840, guid: 63098a0bdc0f83649b983b89f838da2f, type: 3}
+  m_PrefabInstance: {fileID: 1272161500025247555}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &5210734985804223441 stripped
+MeshCollider:
+  m_CorrespondingSourceObject: {fileID: 6482826077304603794, guid: 63098a0bdc0f83649b983b89f838da2f, type: 3}
   m_PrefabInstance: {fileID: 1272161500025247555}
   m_PrefabAsset: {fileID: 0}

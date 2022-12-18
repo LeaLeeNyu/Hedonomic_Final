@@ -21,6 +21,7 @@ TagManager:
   - AncientDream
   - ClubDream
   - HouseDream
+  - XROrigin
   layers:
   - Default
   - TransparentFX
